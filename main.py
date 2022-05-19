@@ -51,8 +51,10 @@ if __name__ == '__main__':
     parser.add_argument('--char_vocab_size', default=108, type=int)
     parser.add_argument('--hidden_dim', default=728, type=int)
     parser.add_argument('--hidden_dim_ffw', default=400, type=int)
-    parser.add_argument('--num_labels', default=12, type=int)
+    parser.add_argument('--num_intent_labels', default=12, type=int)
+    parser.add_argument('--num_slot_labels', default=20, type=int)
     parser.add_argument('--model_name_or_path', type=str)
+    parser.add_argument('--lstm_layers', type=int, default=2)
 
     # train
     parser.add_argument('--num_epochs', default=30, type=int)

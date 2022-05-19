@@ -25,7 +25,8 @@ class Trainer(object):
         self.dev_dataset = dev_dataset
         self.test_dataset = test_dataset
         self.best_score = 0
-        self.label_set = train_dataset.label_set
+        self.intent_label_set = train_dataset.intent_label_set
+        self.slot_label_set = train_dataset.slot_label_set
 
     def train(self):
         train_sampler = RandomSampler(self.train_dataset)
@@ -143,7 +144,7 @@ class Trainer(object):
         intent_labels = list(itertools.chain.from_iterable(intent_labels))
         intent_outputs = list(itertools.chain.from_iterable(intent_outputs))
 
-        precision, recall, f1_score, report, intent_accuracy, frame_accuracy = batch_computeF1(labels, outputs, seq_lengths, self.label_set)
+        precision, recall, f1_score, report, intent_accuracy, frame_accuracy = batch_computeF1(intent_labels, intent_outputs, slot_labels, slot_outputs, seq_lengths, self.slot_label_set)
 
         result = {
             '{} loss'.format(mode): eval_loss / len(eval_dataloader),

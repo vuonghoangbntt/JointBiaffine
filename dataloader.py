@@ -103,7 +103,7 @@ class MyDataSet(Dataset):
             start.append(lb[1])
             end.append(lb[2])
             try:
-                entity.append(self.label_2int[lb[0]])
+                entity.append(self.slot_2int[lb[0]])
             except:
                 print(lb)
         label = torch.sparse.FloatTensor(torch.tensor([start, end], dtype=torch.int64), torch.tensor(entity),
@@ -117,14 +117,14 @@ class MyDataSet(Dataset):
         char_seq = sample['char_sequence']
         seq_length = len(sentence)
         slot_label = sample['slot label']
-        intent_label = sample['intent_label']
+        intent_label = sample['intent label']
 
         input_ids, attention_mask, firstSWindices = self.preprocess(self.tokenizer, sentence, self.max_seq_length)
 
         char_ids = self.character2id(char_seq, max_seq_length=self.max_seq_length)
 
         slot_label = self.span_maxtrix_label(slot_label)
-        intent_label = torch.LongTensor([self.intent_2int[label] for label in intent_label])
+        intent_label = torch.LongTensor(self.intent_2int[intent_label])
         return input_ids, attention_mask, firstSWindices, torch.tensor([seq_length]), char_ids, intent_label, slot_label.long()
 
     def __len__(self):
