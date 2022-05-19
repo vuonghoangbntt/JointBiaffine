@@ -1,3 +1,4 @@
+import itertools
 from metrics import batch_computeF1
 import torch
 from torch.utils.data import DataLoader, RandomSampler
@@ -133,23 +134,28 @@ class Trainer(object):
 
             intent_outputs.append(torch.argmax(intent_logit, dim=1))
             slot_outputs.append(slot_score)
-            loss = loss_func(tmp_out, tmp_label)
+
+            loss = self.args.intent_weight*loss_func(intent_label, intent_logits)+(1-self.args.intent_weight)*loss_func(tmp_out, tmp_label)
             eval_loss += loss.item()
         slot_labels = torch.cat(slot_labels, dim=0)
         slot_outputs = torch.cat(slot_outputs, dim=0)
         seq_lengths = torch.cat(seq_lengths, dim=0)
+        intent_labels = list(itertools.chain.from_iterable(intent_labels))
+        intent_outputs = list(itertools.chain.from_iterable(intent_outputs))
 
-        precision, recall, f1_score, report = batch_computeF1(labels, outputs, seq_lengths, self.label_set)
+        precision, recall, f1_score, report, intent_accuracy, frame_accuracy = batch_computeF1(labels, outputs, seq_lengths, self.label_set)
 
         result = {
             '{} loss'.format(mode): eval_loss / len(eval_dataloader),
             'precision': precision,
             'recall': recall,
-            'f1_score': f1_score
+            'f1_score': f1_score,
+            'intent_accuracy': intent_accuracy,
+            'frame_accuracy': frame_accuracy
         }
-        if f1_score > self.best_score:
+        if (f1_score+intent_accuracy)/2 > self.best_score:
             self.save_model()
-            self.best_score = f1_score
+            self.best_score = (f1_score+intent_accuracy)/2
         print(result)
         # print(report)
 

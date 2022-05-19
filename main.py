@@ -1,16 +1,70 @@
-# This is a sample Python script.
+from transformers import AutoTokenizer
+from dataloader import MyDataSet
+from trainer import Trainer
+import argparse
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def train(args):
+    tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
+    train_dataset = MyDataSet(path=args.train_path, char_vocab_path=args.char_vocab_path,
+                              tokenizer=tokenizer, intent_label_path=args.intent_label_path,
+                              slot_label_path=args.slot_label_path, max_char_len=args.max_char_len,
+                              max_seq_length=args.max_seq_length)
+    dev_dataset = MyDataSet(path=args.dev_path, char_vocab_path=args.char_vocab_path,
+                            tokenizer=tokenizer, intent_label_path=args.intent_label_path,
+                            slot_label_path=args.slot_label_path, max_char_len=args.max_char_len,
+                            max_seq_length=args.max_seq_length)
 
+    test_dataset = MyDataSet(path=args.test_path, char_vocab_path=args.char_vocab_path,
+                             tokenizer=tokenizer, intent_label_path=args.intent_label_path,
+                             slot_label_path=args.slot_label_path, max_char_len=args.max_char_len,
+                             max_seq_length=args.max_seq_length)
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+    trainer = Trainer(args=args, train_dataset=train_dataset,
+                      dev_dataset=dev_dataset, test_dataset=test_dataset)
+    if args.do_train:
+        trainer.train()
 
+    if args.do_eval:
+        trainer.load_model()
+        print('Test Result:')
+        trainer.eval("test")
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    parser = argparse.ArgumentParser()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    # dataset
+    parser.add_argument("--train_path", default="data/SF_ATIS/train.json", type=str)
+    parser.add_argument('--dev_path', type=str, default="data/SF_ATIS/dev.json")
+    parser.add_argument('--test_path', type=str, default="data/SF_ATIS/test.json")
+    parser.add_argument('--char_vocab_path', type=str, default="data/charindex.json")
+    parser.add_argument('--intent_label_path', type=str, default="data/SF_ATIS/intent_label.txt")
+    parser.add_argument('--slot_label_path', type=str, default="data/SF_ATIS/slot_label.txt")
+    parser.add_argument('--max_char_len', default=20, type=int)
+    parser.add_argument('--max_seq_length', default=100, type=int)
+    parser.add_argument('--batch_size', default=32, type=int)
+
+    # model
+    parser.add_argument('--use_char', action="store_true")
+    parser.add_argument('--char_embedding_dim', default=100, type=int)
+    parser.add_argument('--char_hidden_dim', default=200, type=int)
+    parser.add_argument('--num_layer_bert', default=1, type=int)
+    parser.add_argument('--char_vocab_size', default=108, type=int)
+    parser.add_argument('--hidden_dim', default=728, type=int)
+    parser.add_argument('--hidden_dim_ffw', default=400, type=int)
+    parser.add_argument('--num_labels', default=12, type=int)
+    parser.add_argument('--model_name_or_path', type=str)
+
+    # train
+    parser.add_argument('--num_epochs', default=30, type=int)
+    parser.add_argument('--learning_rate', default=5e-5, type=float)
+    parser.add_argument('--adam_epsilon', default=1e-8, type=float)
+    parser.add_argument('--weight_decay', default=0.01, type=float)
+    parser.add_argument('--warmup_steps', default=0, type=int)
+    parser.add_argument('--max_grad_norm', default=1, type=int)
+    parser.add_argument('--do_train', action="store_true")
+    parser.add_argument('--do_eval', action="store_true")
+
+    parser.add_argument('--save_folder', default='results', type=str)
+    args, unk = parser.parse_known_args()
+
+    train(args)

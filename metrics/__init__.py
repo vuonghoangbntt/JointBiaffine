@@ -5,6 +5,7 @@ def batch_computeF1(intent_labels, intent_preds, slot_labels, slot_preds, seq_le
     y_true = []
     y_pred = []
     sent_true = 0
+    intent_accuracy = np.sum(np.array(intent_labels) == np.array(intent_preds))/len(intent_labels)
     for i in range(len(slot_labels)):
         intent_label = intent_labels[i]
         intent_pred = intent_preds[i]
@@ -15,10 +16,12 @@ def batch_computeF1(intent_labels, intent_preds, slot_labels, slot_preds, seq_le
         pred = pred[:true_len, :true_len]
         label = label[:true_len, :true_len]
         predict_entity, label_entity = get_entities(pred, label, label_set)
+        if predict_entity == label_entity and intent_label == intent_pred:
+            sent_true+=1
 
         y_true.append(label_entity)
         y_pred.append(predict_entity)
-    return precision_score(y_true, y_pred), recall_score(y_true, y_pred), f1_score(y_true, y_pred), classification_report(y_true,y_pred,digits=4)
+    return precision_score(y_true, y_pred), recall_score(y_true, y_pred), f1_score(y_true, y_pred), classification_report(y_true,y_pred,digits=4), intent_accuracy, float(sent_true)/len(intent_labels)
 
 
 def get_entities(input_tensor, label, label_set):
