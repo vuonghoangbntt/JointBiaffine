@@ -24,7 +24,7 @@ export WARMUP_STEPS=0
 export MAX_GRAD_NORM=1
 export SAVE_FOLDER="results"
 
-python train.py --train_path $TRAIN_PATH \
+python main.py --train_path $TRAIN_PATH \
                 --max_char_len $MAX_CHAR_LEN  \
                 --dev_path $DEV_PATH \
                 --max_seq_length $MAX_SEQ_LENGTH \

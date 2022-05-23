@@ -124,7 +124,7 @@ class MyDataSet(Dataset):
         char_ids = self.character2id(char_seq, max_seq_length=self.max_seq_length)
 
         slot_label = self.span_maxtrix_label(slot_label)
-        intent_label = torch.LongTensor(self.intent_2int[intent_label])
+        intent_label = self.intent_2int[intent_label]
         return input_ids, attention_mask, firstSWindices, torch.tensor([seq_length]), char_ids, intent_label, slot_label.long()
 
     def __len__(self):

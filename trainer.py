@@ -136,7 +136,7 @@ class Trainer(object):
             intent_outputs.append(torch.argmax(intent_logit, dim=1))
             slot_outputs.append(slot_score)
 
-            loss = self.args.intent_weight*loss_func(intent_label, intent_logits)+(1-self.args.intent_weight)*loss_func(tmp_out, tmp_label)
+            loss = self.args.intent_weight*loss_func(intent_label, intent_logit)+(1-self.args.intent_weight)*loss_func(tmp_out, tmp_label)
             eval_loss += loss.item()
         slot_labels = torch.cat(slot_labels, dim=0)
         slot_outputs = torch.cat(slot_outputs, dim=0)
