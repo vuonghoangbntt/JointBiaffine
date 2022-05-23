@@ -105,7 +105,7 @@ class MyDataSet(Dataset):
             try:
                 entity.append(self.slot_2int[lb[0]])
             except:
-                print(lb)
+                entity.append(self.slot_2int['UNK'])
         label = torch.sparse.FloatTensor(torch.tensor([start, end], dtype=torch.int64), torch.tensor(entity),
                                          torch.Size([self.max_seq_length, self.max_seq_length])).to_dense()
         return label
@@ -124,7 +124,7 @@ class MyDataSet(Dataset):
         char_ids = self.character2id(char_seq, max_seq_length=self.max_seq_length)
 
         slot_label = self.span_maxtrix_label(slot_label)
-        intent_label = self.intent_2int[intent_label]
+        intent_label = self.intent_2int.get(intent_label, self.intent_2int['UNK'])
         return input_ids, attention_mask, firstSWindices, torch.tensor([seq_length]), char_ids, intent_label, slot_label.long()
 
     def __len__(self):

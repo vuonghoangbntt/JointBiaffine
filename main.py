@@ -55,6 +55,7 @@ if __name__ == '__main__':
     parser.add_argument('--num_slot_labels', default=82, type=int)
     parser.add_argument('--model_name_or_path', type=str)
     parser.add_argument('--lstm_layers', type=int, default=2)
+    parser.add_argument('--intent_weight', type=float, default=0.2)
 
     # train
     parser.add_argument('--num_epochs', default=30, type=int)
