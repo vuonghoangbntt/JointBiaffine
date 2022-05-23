@@ -25,4 +25,4 @@ class JointBiaffine(nn.Module):
                           first_subword=first_subword,
                           char_ids=char_ids)
         x, (hn, cn) = self.bilstm(x)
-        return self.intent_classifier(hn.permute(1, 0, 2).view(x.shape[0], -1)), self.slot_classifier(x)
+        return self.intent_classifier(hn.permute(1, 0, 2).reshape(x.shape[0], -1)), self.slot_classifier(x)
