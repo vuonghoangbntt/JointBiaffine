@@ -16,8 +16,9 @@ class JointBiaffine(nn.Module):
         self.word_rep = MergeEmbedding(args)
         self.bilstm = nn.LSTM(input_size=self.lstm_input_size, hidden_size=args.hidden_dim // 2,
                               num_layers=args.lstm_layers, bidirectional=True, batch_first=True)
-        self.intent_classifier = IntentClassifier(input_dim=args.hidden_dim, num_intent_labels=args.num_intent_labels)
-        self.slot_classifier = SlotClassifier(input_dim=args.hidden_dim * 2 * args.lstm_layers,
+        self.intent_classifier = IntentClassifier(input_dim=args.hidden_dim * 2 * args.lstm_layers,
+                                                  num_intent_labels=args.num_intent_labels)
+        self.slot_classifier = SlotClassifier(input_dim=args.hidden_dim,
                                               hidden_dim=args.hidden_dim_ffw, num_slot_labels=args.num_slot_labels)
 
     def forward(self, input_ids=None, char_ids=None, first_subword=None, attention_mask=None):
