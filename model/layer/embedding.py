@@ -1,4 +1,4 @@
-from model.layer import CharCNN, FeatureEmbedding
+from model.layer import CharCNN
 import torch
 from torch import nn
 from transformers import AutoModel

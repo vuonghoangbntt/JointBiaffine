@@ -49,5 +49,5 @@ python main.py --train_path $TRAIN_PATH \
                 --intent_label_path $INTENT_LABEL_PATH \
                 --slot_label_path $SLOT_LABEL_PATH\
                 --do_eval \
-                #--do_train \
-                #--use_char \
+                --do_train \
+                --use_char \
