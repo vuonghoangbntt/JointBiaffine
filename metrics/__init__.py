@@ -13,8 +13,8 @@ def batch_computeF1(intent_labels, intent_preds, slot_labels, slot_preds, seq_le
         slot_pred = slot_preds[i]
 
         true_len = seq_lengths[i].item()
-        pred = pred[:true_len, :true_len]
-        label = label[:true_len, :true_len]
+        pred = slot_pred[:true_len, :true_len]
+        label = slot_label[:true_len, :true_len]
         predict_entity, label_entity = get_entities(pred, label, label_set)
         if predict_entity == label_entity and intent_label == intent_pred:
             sent_true+=1

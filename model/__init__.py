@@ -1,1 +1,1 @@
-from jointBiaffine import JointBiaffine
+from .jointBiaffine import JointBiaffine

@@ -79,7 +79,7 @@ class Trainer(object):
                 mask = mask.to(self.device)
                 tmp_out, tmp_label = get_useful_ones(slot_score, slot_label, mask)
 
-                loss = self.args.intent_weight*loss_func(intent_label, intent_logits)+(1-self.args.intent_weight)*loss_func(tmp_out, tmp_label)
+                loss = self.args.intent_weight*loss_func(intent_logits, intent_label)+(1-self.args.intent_weight)*loss_func(tmp_out, tmp_label)
                 loss.backward()
                 optimizer.step()
                 train_loss += loss.item()
@@ -130,13 +130,13 @@ class Trainer(object):
             mask = mask.to(self.device)
 
             tmp_out, tmp_label = get_useful_ones(slot_score, slot_label, mask)
-            slot_labels.append(slot_label)
-            intent_labels.append(intent_label)
+            slot_labels.append(slot_label.cpu())
+            intent_labels.append(intent_label.cpu())
 
-            intent_outputs.append(torch.argmax(intent_logit, dim=1))
-            slot_outputs.append(slot_score)
+            intent_outputs.append(torch.argmax(intent_logit, dim=1).cpu())
+            slot_outputs.append(slot_score.cpu())
 
-            loss = self.args.intent_weight*loss_func(intent_label, intent_logit)+(1-self.args.intent_weight)*loss_func(tmp_out, tmp_label)
+            loss = self.args.intent_weight*loss_func(intent_logit, intent_label)+(1-self.args.intent_weight)*loss_func(tmp_out, tmp_label)
             eval_loss += loss.item()
         slot_labels = torch.cat(slot_labels, dim=0)
         slot_outputs = torch.cat(slot_outputs, dim=0)

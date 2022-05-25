@@ -3,6 +3,7 @@ from dataloader import MyDataSet
 from trainer import Trainer
 import argparse
 
+
 def train(args):
     tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
     train_dataset = MyDataSet(path=args.train_path, char_vocab_path=args.char_vocab_path,
@@ -28,6 +29,7 @@ def train(args):
         trainer.load_model()
         print('Test Result:')
         trainer.eval("test")
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
