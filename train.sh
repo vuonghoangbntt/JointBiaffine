@@ -8,13 +8,14 @@ export SLOT_LABEL_PATH="data/SF_ATIS/slot_label.txt"
 export MAX_CHAR_LEN=20
 export MAX_SEQ_LENGTH=100
 export BATCH_SIZE=32
-export CHAR_EMBEDDING_DIM=100
-export CHAR_HIDDEN_DIM=200
+export CHAR_EMBEDDING_DIM=120
+export CHAR_HIDDEN_DIM=150
 export NUM_BERT_LAYER=1
 export CHAR_VOCAB_SIZE=108
 export HIDDEN_DIM=728
 export HIDDEN_DIM_FFW=300
-export NUM_LABELS=83
+export NUM_SLOT_LABELS=83
+export NUM_INTENT_LABELS=25
 export MODEL_NAME_OR_PATH="vinai/phobert-base"
 export NUM_EPOCHS=30
 export LEARNING_RATE=5e-5
@@ -35,7 +36,8 @@ python main.py --train_path $TRAIN_PATH \
                 --char_vocab_size $CHAR_VOCAB_SIZE \
                 --hidden_dim $HIDDEN_DIM \
                 --hidden_dim_ffw $HIDDEN_DIM_FFW \
-                --num_labels $NUM_LABELS \
+                --num_slot_labels $NUM_SLOT_LABELS \
+                --num_intent_labels $NUM_INTENT_LABELS\
                 --model_name_or_path $MODEL_NAME_OR_PATH \
                 --num_epochs $NUM_EPOCHS \
                 --learning_rate $LEARNING_RATE \
