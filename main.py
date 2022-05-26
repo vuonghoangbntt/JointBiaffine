@@ -2,9 +2,19 @@ from transformers import AutoTokenizer
 from dataloader import MyDataSet
 from trainer import Trainer
 import argparse
+import torch
+
+
+def set_seed(args):
+    random.seed(args.seed)
+    np.random.seed(args.seed)
+    torch.manual_seed(args.seed)
+    if not args.no_cuda and torch.cuda.is_available():
+        torch.cuda.manual_seed_all(args.seed)
 
 
 def train(args):
+    set_seed(args)
     tokenizer = AutoTokenizer.from_pretrained(args.model_name_or_path)
     train_dataset = MyDataSet(path=args.train_path, char_vocab_path=args.char_vocab_path,
                               tokenizer=tokenizer, intent_label_path=args.intent_label_path,
@@ -70,6 +80,7 @@ if __name__ == '__main__':
     parser.add_argument('--do_eval', action="store_true")
 
     parser.add_argument('--save_folder', default='results', type=str)
+    parser.add_argument('--seed', default=1, type=int)
     args, unk = parser.parse_known_args()
 
     train(args)
