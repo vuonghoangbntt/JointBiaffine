@@ -15,7 +15,7 @@ class Trainer(object):
         self.args = args
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
-        self.save_folder = args.save_folder
+        self.save_folder = os.path.join(args.save_folder, f'seed={args.seed}')
         if not os.path.exists(self.save_folder):
             os.mkdir(self.save_folder)
 
@@ -103,7 +103,7 @@ class Trainer(object):
             raise Exception("Only dev and test dataset available")
 
         eval_sampler = RandomSampler(dataset)
-        eval_dataloader = DataLoader(dataset=dataset, sampler=eval_sampler, batch_size=self.args.batch_size,
+        eval_dataloader = DataLoader(dataset=dataset, shuffle=False, batch_size=self.args.batch_size,
                                      num_workers=16)
 
         self.model.eval()
@@ -144,7 +144,7 @@ class Trainer(object):
         intent_labels = list(itertools.chain.from_iterable(intent_labels))
         intent_outputs = list(itertools.chain.from_iterable(intent_outputs))
 
-        precision, recall, f1_score, report, intent_accuracy, frame_accuracy = batch_computeF1(intent_labels, intent_outputs, slot_labels, slot_outputs, seq_lengths, self.slot_label_set)
+        precision, recall, f1_score, report, intent_accuracy, frame_accuracy = batch_computeF1(intent_labels, intent_outputs, slot_labels, slot_outputs, seq_lengths, self.slot_label_set, self.save_folder, do_error_analyze=(mode=='test'), samples=dataset.samples)
 
         result = {
             '{} loss'.format(mode): eval_loss / len(eval_dataloader),

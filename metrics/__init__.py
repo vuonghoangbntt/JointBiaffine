@@ -1,37 +1,47 @@
 from metrics.sequence_labeling import *
+import os
 
 
-def batch_computeF1(intent_labels, intent_preds, slot_labels, slot_preds, seq_lengths, label_set):
+def batch_computeF1(intent_labels, intent_preds, slot_labels, slot_preds, seq_lengths, label_set, save_path=None, do_error_analyze=False, samples=None):
     y_true = []
     y_pred = []
     sent_true = 0
     intent_accuracy = np.sum(np.array(intent_labels) == np.array(intent_preds)) / len(intent_labels)
-    for i in range(len(slot_labels)):
-        intent_label = intent_labels[i]
-        intent_pred = intent_preds[i]
-        slot_label = slot_labels[i]
-        slot_pred = slot_preds[i]
+    with open(os.path.join(save_path, "error_analysis.txt"), 'w') as f:
+        for i in range(len(slot_labels)):
+            intent_label = intent_labels[i]
+            intent_pred = intent_preds[i]
+            slot_label = slot_labels[i]
+            slot_pred = slot_preds[i]
 
-        true_len = seq_lengths[i].item()
-        pred = slot_pred[:true_len, :true_len]
-        label = slot_label[:true_len, :true_len]
-        predict_entity, label_entity = get_entities(pred, label, label_set)
-        y_true.append(label_entity)
-        y_pred.append(predict_entity)
-        flag = 1
-        label_entity = sorted(list(label_entity), key=lambda x: x[1])
-        predict_entity = sorted(list(predict_entity), key=lambda x: x[1])
-        if intent_label != intent_pred:
-            flag = 0
-        elif len(label_entity) != len(predict_entity):
-            flag = 0
-        else:
-            for i in range(len(label_entity)):
-                if label_entity[i][0] != predict_entity[i][0] \
-                        or label_entity[i][1] != predict_entity[i][1] \
-                        or label_entity[i][2] != predict_entity[i][2]:
-                    flag = 0
-                    break
+            true_len = seq_lengths[i].item()
+            pred = slot_pred[:true_len, :true_len]
+            label = slot_label[:true_len, :true_len]
+            predict_entity, label_entity = get_entities(pred, label, label_set)
+            y_true.append(label_entity)
+            y_pred.append(predict_entity)
+            flag = 1
+            label_entity = sorted(list(label_entity), key=lambda x: x[1])
+            predict_entity = sorted(list(predict_entity), key=lambda x: x[1])
+            if intent_label != intent_pred:
+                flag = 0
+            elif len(label_entity) != len(predict_entity):
+                flag = 0
+            else:
+                for j in range(len(label_entity)):
+                    if label_entity[i][0] != predict_entity[i][0] \
+                            or label_entity[i][1] != predict_entity[i][1] \
+                            or label_entity[i][2] != predict_entity[i][2]:
+                        flag = 0
+                        break
+            if flag==0 and do_error_analyze:
+                f.write(samples[i])
+                f.write('\n'+str(intent_label))
+                f.write('\n'+str(label_entity))
+                f.write('\n'+str(intent_pred))
+                f.write('\n'+str(predict_entity))
+                f.write('\n')
+                f.write('---------------------------------------\n')
         sent_true += flag
     return precision_score(y_true, y_pred), recall_score(y_true, y_pred), f1_score(y_true,
                                                                                    y_pred), classification_report(
