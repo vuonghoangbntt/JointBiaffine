@@ -5,7 +5,7 @@ from torch.utils.data import DataLoader, RandomSampler
 from transformers import AdamW, get_linear_schedule_with_warmup
 from model import JointBiaffine
 from tqdm import trange
-from tqdm import tqdm
+from tqdm.notebook import tqdm
 from dataloader import get_useful_ones, get_mask
 import os
 
@@ -17,7 +17,7 @@ class Trainer(object):
 
         self.save_folder = os.path.join(args.save_folder, f'seed={args.seed}')
         if not os.path.exists(self.save_folder):
-            os.mkdir(self.save_folder)
+            os.mkdir(self.save_folder, exist_ok=True)
 
         self.model = JointBiaffine(args=args)
         self.model.to(self.device)

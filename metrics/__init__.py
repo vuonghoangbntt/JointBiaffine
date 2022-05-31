@@ -29,20 +29,20 @@ def batch_computeF1(intent_labels, intent_preds, slot_labels, slot_preds, seq_le
                 flag = 0
             else:
                 for j in range(len(label_entity)):
-                    if label_entity[i][0] != predict_entity[i][0] \
-                            or label_entity[i][1] != predict_entity[i][1] \
-                            or label_entity[i][2] != predict_entity[i][2]:
+                    if label_entity[j][0] != predict_entity[j][0] \
+                            or label_entity[j][1] != predict_entity[j][1] \
+                            or label_entity[j][2] != predict_entity[j][2]:
                         flag = 0
                         break
             if flag==0 and do_error_analyze:
-                f.write(samples[i])
+                f.write(' '.join(samples[i]['sentence']))
                 f.write('\n'+str(intent_label))
                 f.write('\n'+str(label_entity))
                 f.write('\n'+str(intent_pred))
                 f.write('\n'+str(predict_entity))
                 f.write('\n')
                 f.write('---------------------------------------\n')
-        sent_true += flag
+            sent_true += flag
     return precision_score(y_true, y_pred), recall_score(y_true, y_pred), f1_score(y_true,
                                                                                    y_pred), classification_report(
         y_true, y_pred, digits=4), intent_accuracy, float(sent_true) / len(intent_labels)
