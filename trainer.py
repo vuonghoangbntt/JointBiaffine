@@ -18,7 +18,7 @@ class Trainer(object):
 
         self.save_folder = os.path.join(args.save_folder, f'seed={args.seed}')
         if not os.path.exists(self.save_folder):
-            os.mkdir(self.save_folder, exist_ok=True)
+            os.makedirs(self.save_folder, exist_ok=True)
 
         self.model = JointBiaffine(args=args)
         self.model.to(self.device)
