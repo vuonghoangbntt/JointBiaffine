@@ -8,6 +8,7 @@ from tqdm import trange
 from tqdm.notebook import tqdm
 from dataloader import get_useful_ones, get_mask
 import os
+import logging
 
 
 class Trainer(object):
@@ -27,6 +28,10 @@ class Trainer(object):
         self.best_score = 0
         self.intent_label_set = train_dataset.intent_label_set
         self.slot_label_set = train_dataset.slot_label_set
+        self.logger = logging.getLogger()
+        file_handler = logging.FileHandler("{0}/{1}".format(self.save_folder, "log"),
+                                           mode='w')
+        self.logger.addHandler(file_handler)
 
     def train(self):
         train_sampler = RandomSampler(self.train_dataset)
@@ -57,7 +62,7 @@ class Trainer(object):
 
         for epoch in trange(self.args.num_epochs):
             train_loss = 0
-            print('EPOCH:', epoch)
+            self.logger.info('EPOCH:', epoch)
             self.model.train()
             step = 0
             for batch in tqdm(train_dataloader):
@@ -91,7 +96,7 @@ class Trainer(object):
                 # update learning rate
                 scheduler.step()
                 step+= 1
-            print('train loss:', train_loss / len(train_dataloader))
+            self.logger.info('train loss:', train_loss / len(train_dataloader))
             self.eval('dev')
 
     def eval(self, mode):

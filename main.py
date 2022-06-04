@@ -1,4 +1,3 @@
-%%writefile main.py
 from transformers import AutoTokenizer
 from dataloader import MyDataSet
 from trainer import Trainer
