@@ -29,9 +29,14 @@ class Trainer(object):
         self.intent_label_set = train_dataset.intent_label_set
         self.slot_label_set = train_dataset.slot_label_set
         self.logger = logging.getLogger()
+        self.logger.setLevel(logging.INFO)
+
+        logFormatter = logging.Formatter("%(asctime)s [%(threadName)-12.12s] [%(levelname)-5.5s]  %(message)s")
         file_handler = logging.FileHandler("{0}/{1}".format(self.save_folder, "log"),
                                            mode='w')
         self.logger.addHandler(file_handler)
+        consoleHandler = logging.StreamHandler()
+        self.logger.addHandler(consoleHandler)
 
     def train(self):
         train_sampler = RandomSampler(self.train_dataset)
@@ -62,7 +67,9 @@ class Trainer(object):
 
         for epoch in trange(self.args.num_epochs):
             train_loss = 0
-            self.logger.info('EPOCH:', epoch)
+            self.logger.info('\n------------------------------------')
+            self.logger.info(f'\n          EPOCH: {epoch}           ')
+            self.logger.info('\n------------------------------------')
             self.model.train()
             step = 0
             for batch in tqdm(train_dataloader):
@@ -84,7 +91,8 @@ class Trainer(object):
                 mask = mask.to(self.device)
                 tmp_out, tmp_label = get_useful_ones(slot_score, slot_label, mask)
 
-                loss = self.args.intent_weight*loss_func(intent_logits, intent_label)+(1-self.args.intent_weight)*loss_func(tmp_out, tmp_label)
+                loss = self.args.intent_weight * loss_func(intent_logits, intent_label) + (
+                            1 - self.args.intent_weight) * loss_func(tmp_out, tmp_label)
                 loss.backward()
                 optimizer.step()
                 train_loss += loss.item()
@@ -95,8 +103,8 @@ class Trainer(object):
 
                 # update learning rate
                 scheduler.step()
-                step+= 1
-            self.logger.info('train loss:', train_loss / len(train_dataloader))
+                step += 1
+            self.logger.info(f'train loss:{train_loss / len(train_dataloader)}')
             self.eval('dev')
 
     def eval(self, mode):
@@ -141,7 +149,8 @@ class Trainer(object):
             intent_outputs.append(torch.argmax(intent_logit, dim=1).cpu())
             slot_outputs.append(slot_score.cpu())
 
-            loss = self.args.intent_weight*loss_func(intent_logit, intent_label)+(1-self.args.intent_weight)*loss_func(tmp_out, tmp_label)
+            loss = self.args.intent_weight * loss_func(intent_logit, intent_label) + (
+                        1 - self.args.intent_weight) * loss_func(tmp_out, tmp_label)
             eval_loss += loss.item()
         slot_labels = torch.cat(slot_labels, dim=0)
         slot_outputs = torch.cat(slot_outputs, dim=0)
@@ -149,7 +158,16 @@ class Trainer(object):
         intent_labels = list(itertools.chain.from_iterable(intent_labels))
         intent_outputs = list(itertools.chain.from_iterable(intent_outputs))
 
-        precision, recall, f1_score, report, intent_accuracy, frame_accuracy = batch_computeF1(intent_labels, intent_outputs, slot_labels, slot_outputs, seq_lengths, self.slot_label_set, self.save_folder, do_error_analyze=(mode=='test'), samples=dataset.samples)
+        precision, recall, f1_score, report, intent_accuracy, frame_accuracy = batch_computeF1(intent_labels,
+                                                                                               intent_outputs,
+                                                                                               slot_labels,
+                                                                                               slot_outputs,
+                                                                                               seq_lengths,
+                                                                                               self.slot_label_set,
+                                                                                               self.save_folder,
+                                                                                               do_error_analyze=(
+                                                                                                           mode == 'test'),
+                                                                                               samples=dataset.samples)
 
         result = {
             '{} loss'.format(mode): eval_loss / len(eval_dataloader),
@@ -159,10 +177,10 @@ class Trainer(object):
             'intent_accuracy': intent_accuracy,
             'frame_accuracy': frame_accuracy
         }
-        if (f1_score+intent_accuracy)/2 > self.best_score:
+        if (f1_score + intent_accuracy) / 2 > self.best_score:
             self.save_model()
-            self.best_score = (f1_score+intent_accuracy)/2
-        print(result)
+            self.best_score = (f1_score + intent_accuracy) / 2
+        self.logger.info(str(result))
         # print(report)
 
     def save_model(self):
