@@ -39,7 +39,9 @@ def train(args):
 
     if args.do_eval:
         trainer.load_model()
-        print('Test Result:')
+        trainer.logger.info('Dev Result: ')
+        trainer.eval("dev")
+        trainer.logger.info('Test Result:')
         trainer.eval("test")
 
 
