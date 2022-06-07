@@ -1,0 +1,700 @@
+{"sentence": "add sabrina salerno to the grime instrumentals playlist", "slot label": [["artist", 1, 2], ["playlist", 5, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "i want to bring four people to a place that s close to downtown that serves churrascaria cuisine", "slot label": [["party_size_number", 4, 4], ["spatial_relation", 11, 11], ["poi", 13, 13], ["restaurant_type", 16, 16]], "intent label": "BookRestaurant"}
+{"sentence": "put lindsey cardinale into my hillary clinton s women s history month playlist", "slot label": [["artist", 1, 2], ["playlist_owner", 4, 4], ["playlist", 5, 12]], "intent label": "AddToPlaylist"}
+{"sentence": "will it snow in mt on june 13  2038", "slot label": [["condition_description", 2, 2], ["state", 4, 4], ["timeRange", 6, 8]], "intent label": "GetWeather"}
+{"sentence": "play signe anderson chant music that is newest", "slot label": [["artist", 1, 2], ["music_item", 3, 3], ["sort", 7, 7]], "intent label": "PlayMusic"}
+{"sentence": "can you let me know what animated movies are playing close by", "slot label": [["movie_type", 6, 7], ["spatial_relation", 10, 11]], "intent label": "SearchScreeningEvent"}
+{"sentence": "can you get me reservations for a highly rated restaurant in seychelles", "slot label": [["sort", 7, 8], ["restaurant_type", 9, 9], ["country", 11, 11]], "intent label": "BookRestaurant"}
+{"sentence": "what s the weather here on 2/7/2021", "slot label": [["current_location", 4, 4], ["timeRange", 6, 6]], "intent label": "GetWeather"}
+{"sentence": "find worldly goods starting now at a movie house", "slot label": [["movie_name", 1, 2], ["timeRange", 4, 4], ["object_location_type", 7, 8]], "intent label": "SearchScreeningEvent"}
+{"sentence": "on june 27  2026 i d like to go to a delaware gastropub", "slot label": [["timeRange", 1, 3], ["state", 11, 11], ["restaurant_type", 12, 12]], "intent label": "BookRestaurant"}
+{"sentence": "what movies are playing at mann theatres", "slot label": [["movie_type", 1, 1], ["location_name", 5, 6]], "intent label": "SearchScreeningEvent"}
+{"sentence": "find a movie called living in america", "slot label": [["object_type", 2, 2], ["object_name", 4, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "find on dress parade", "slot label": [["movie_name", 1, 3]], "intent label": "SearchScreeningEvent"}
+{"sentence": "make a reservation at a bakery that has acquacotta in central african republic for five", "slot label": [["restaurant_type", 5, 5], ["served_dish", 8, 8], ["country", 10, 12], ["party_size_number", 14, 14]], "intent label": "BookRestaurant"}
+{"sentence": "where can i purchase the tv show time for heroes", "slot label": [["object_type", 5, 6], ["object_name", 7, 9]], "intent label": "SearchCreativeWork"}
+{"sentence": "will the wind die down at my current location by supper time", "slot label": [["condition_description", 2, 2], ["current_location", 7, 8], ["timeRange", 10, 10]], "intent label": "GetWeather"}
+{"sentence": "please search the young warriors game", "slot label": [["object_name", 2, 4], ["object_type", 5, 5]], "intent label": "SearchCreativeWork"}
+{"sentence": "make me a reservation in south carolina", "slot label": [["state", 5, 6]], "intent label": "BookRestaurant"}
+{"sentence": "what movie theatre is showing if the huns came to melbourne", "slot label": [["object_location_type", 1, 2], ["movie_name", 5, 10]], "intent label": "SearchScreeningEvent"}
+{"sentence": "restaurant in bulgaria this week party for 9 numbers", "slot label": [["country", 2, 2], ["timeRange", 3, 4], ["party_size_number", 7, 7]], "intent label": "BookRestaurant"}
+{"sentence": "rate the current novel four of 6 stars", "slot label": [["object_select", 2, 2], ["object_type", 3, 3], ["rating_value", 4, 4], ["best_rating", 6, 6], ["rating_unit", 7, 7]], "intent label": "RateBook"}
+{"sentence": "add the song don t drink the water to my playlist", "slot label": [["music_item", 2, 2], ["playlist", 3, 7], ["playlist_owner", 9, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "add this tune by rod argent to propuesta alternativa playlist", "slot label": [["music_item", 2, 2], ["artist", 4, 5], ["playlist", 7, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "show the movie times", "slot label": [["object_type", 2, 3]], "intent label": "SearchScreeningEvent"}
+{"sentence": "will it snow in amy", "slot label": [["condition_description", 2, 2], ["city", 4, 4]], "intent label": "GetWeather"}
+{"sentence": "what will the weather be at nine am in hi", "slot label": [["timeRange", 6, 7], ["state", 9, 9]], "intent label": "GetWeather"}
+{"sentence": "in one hour find king of hearts", "slot label": [["movie_name", 4, 6]], "intent label": "SearchScreeningEvent"}
+{"sentence": "book a spot for ten at a top-rated  caucasian restaurant not far  from selmer", "slot label": [["party_size_number", 4, 4], ["sort", 7, 7], ["cuisine", 8, 8], ["restaurant_type", 9, 9], ["spatial_relation", 10, 11], ["city", 13, 13]], "intent label": "BookRestaurant"}
+{"sentence": "play music from clark kent in the year 1987", "slot label": [["artist", 3, 4], ["year", 8, 8]], "intent label": "PlayMusic"}
+{"sentence": "add to the rock games", "slot label": [["playlist", 3, 3], ["entity_name", 4, 4]], "intent label": "AddToPlaylist"}
+{"sentence": "add this artist to pop 2017 picks", "slot label": [["music_item", 2, 2], ["playlist", 4, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "i rate shadow of suribachi at five stars", "slot label": [["object_name", 2, 4], ["rating_value", 6, 6], ["rating_unit", 7, 7]], "intent label": "RateBook"}
+{"sentence": "play some sixties music", "slot label": [["year", 2, 2]], "intent label": "PlayMusic"}
+{"sentence": "what film is playing nearby", "slot label": [["movie_type", 1, 1], ["spatial_relation", 4, 4]], "intent label": "SearchScreeningEvent"}
+{"sentence": "add nothing fancy to meditate to sounds of nature playlist", "slot label": [["entity_name", 1, 2], ["playlist", 4, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "get the video game of the chipmunk song", "slot label": [["object_type", 2, 3], ["object_name", 5, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "rate lamy of santa fe 5 of 6 stars", "slot label": [["object_name", 1, 4], ["rating_value", 5, 5], ["best_rating", 7, 7], ["rating_unit", 8, 8]], "intent label": "RateBook"}
+{"sentence": "show me movie schedules", "slot label": [["object_type", 2, 3]], "intent label": "SearchScreeningEvent"}
+{"sentence": "what will the weather be in lago vista on october fourteenth  2022", "slot label": [["city", 6, 7], ["timeRange", 9, 11]], "intent label": "GetWeather"}
+{"sentence": "weather next year in canada", "slot label": [["timeRange", 1, 2], ["country", 4, 4]], "intent label": "GetWeather"}
+{"sentence": "play a new symphony by perfecto de castro on lastfm", "slot label": [["sort", 2, 2], ["music_item", 3, 3], ["artist", 5, 7], ["service", 9, 9]], "intent label": "PlayMusic"}
+{"sentence": "rate cuisines of the axis of evil and other irritating states one out of 6", "slot label": [["object_name", 1, 10], ["rating_value", 11, 11], ["best_rating", 14, 14]], "intent label": "RateBook"}
+{"sentence": "play arif music from the fourties", "slot label": [["artist", 1, 1], ["year", 5, 5]], "intent label": "PlayMusic"}
+{"sentence": "what is the weather of east portal ks", "slot label": [["city", 5, 6], ["state", 7, 7]], "intent label": "GetWeather"}
+{"sentence": "play a melody from elmer bernstein", "slot label": [["music_item", 2, 2], ["artist", 4, 5]], "intent label": "PlayMusic"}
+{"sentence": "what is the weather going to be like in klondike gold rush national historical park on february the 28th  2034", "slot label": [["geographic_poi", 9, 14], ["timeRange", 16, 19]], "intent label": "GetWeather"}
+{"sentence": "play songs by sarah harding", "slot label": [["artist", 3, 4]], "intent label": "PlayMusic"}
+{"sentence": "rate the chronicle ten from tomorrow a 2", "slot label": [["object_part_of_series_type", 2, 2], ["object_name", 3, 5], ["rating_value", 7, 7]], "intent label": "RateBook"}
+{"sentence": "book a table for 2 at a restaurant in follett", "slot label": [["party_size_number", 4, 4], ["restaurant_type", 7, 7], ["city", 9, 9]], "intent label": "BookRestaurant"}
+{"sentence": "book a brasserie in samoa for four people", "slot label": [["restaurant_type", 2, 2], ["country", 4, 4], ["party_size_number", 6, 6]], "intent label": "BookRestaurant"}
+{"sentence": "play the new noise theology e p", "slot label": [["object_name", 1, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "find a reservation at a restaurant that serves gougère in laneville with a party of nine", "slot label": [["restaurant_type", 5, 5], ["served_dish", 8, 8], ["city", 10, 10], ["party_size_number", 15, 15]], "intent label": "BookRestaurant"}
+{"sentence": "find the cold dead hand video game for me", "slot label": [["object_name", 2, 4], ["object_type", 5, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "book a bakery for lebanese on january 11th  2032", "slot label": [["restaurant_type", 2, 2], ["cuisine", 4, 4], ["timeRange", 6, 8]], "intent label": "BookRestaurant"}
+{"sentence": "rate the book an appeal from the new to the old whigs a 0", "slot label": [["object_type", 2, 2], ["object_name", 3, 11], ["rating_value", 13, 13]], "intent label": "RateBook"}
+{"sentence": "book a table for 8 at a restaurant that serves far breton", "slot label": [["party_size_number", 4, 4], ["restaurant_type", 7, 7], ["served_dish", 10, 11]], "intent label": "BookRestaurant"}
+{"sentence": "rate this current novel 1 stars", "slot label": [["object_select", 2, 2], ["object_type", 3, 3], ["rating_value", 4, 4], ["rating_unit", 5, 5]], "intent label": "RateBook"}
+{"sentence": "i rate secret water as a 4", "slot label": [["object_name", 2, 3], ["rating_value", 6, 6]], "intent label": "RateBook"}
+{"sentence": "is unbeatable harold at century theatres", "slot label": [["movie_name", 1, 2], ["location_name", 4, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "please find me asking alexandria discography", "slot label": [["object_name", 3, 5]], "intent label": "SearchCreativeWork"}
+{"sentence": "what will the weather be in berville ak on feb  6  2017", "slot label": [["city", 6, 6], ["state", 7, 7], ["timeRange", 9, 11]], "intent label": "GetWeather"}
+{"sentence": "is it warm in botna", "slot label": [["condition_temperature", 2, 2], ["city", 4, 4]], "intent label": "GetWeather"}
+{"sentence": "please add a track to my playlist called this is coti", "slot label": [["music_item", 3, 3], ["playlist_owner", 5, 5], ["playlist", 8, 10]], "intent label": "AddToPlaylist"}
+{"sentence": "find the via dolorosa: songs of redemption saga", "slot label": [["object_name", 2, 6], ["object_type", 7, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "can you add confessions to my playlist called clásica", "slot label": [["entity_name", 3, 3], ["playlist_owner", 5, 5], ["playlist", 8, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "find the schedule for nearby animated movies", "slot label": [["object_type", 2, 2], ["spatial_relation", 4, 4], ["movie_type", 5, 6]], "intent label": "SearchScreeningEvent"}
+{"sentence": "book a table today at a steakhouse for eight that serves sashimi", "slot label": [["timeRange", 3, 3], ["restaurant_type", 6, 6], ["party_size_number", 8, 8], ["served_dish", 11, 11]], "intent label": "BookRestaurant"}
+{"sentence": "play the last sound track by soko from around 1975", "slot label": [["sort", 2, 2], ["music_item", 3, 4], ["artist", 6, 6], ["year", 9, 9]], "intent label": "PlayMusic"}
+{"sentence": "add this song to blues roots", "slot label": [["music_item", 2, 2], ["playlist", 4, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "coon chicken inn restaurant for 1 am for me  clarice and debbie", "slot label": [["restaurant_type", 3, 3], ["timeRange", 5, 6], ["party_size_description", 8, 11]], "intent label": "BookRestaurant"}
+{"sentence": "add karusellen to jazz brasileiro", "slot label": [["entity_name", 1, 1], ["playlist", 3, 4]], "intent label": "AddToPlaylist"}
+{"sentence": "play some steve boyett chant music", "slot label": [["artist", 2, 3], ["music_item", 4, 4]], "intent label": "PlayMusic"}
+{"sentence": "give 1 out of 6 points to this novel", "slot label": [["rating_value", 1, 1], ["best_rating", 4, 4], ["rating_unit", 5, 5], ["object_select", 7, 7], ["object_type", 8, 8]], "intent label": "RateBook"}
+{"sentence": "show the movie schedule of animated movies close by", "slot label": [["object_type", 2, 3], ["movie_type", 5, 6], ["spatial_relation", 7, 8]], "intent label": "SearchScreeningEvent"}
+{"sentence": "please play the newest music by evil jared hasselhoff", "slot label": [["sort", 3, 3], ["artist", 6, 8]], "intent label": "PlayMusic"}
+{"sentence": "add tune to my mellow bars playlist", "slot label": [["music_item", 1, 1], ["playlist_owner", 3, 3], ["playlist", 4, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "put coming back to life onto winter music", "slot label": [["entity_name", 1, 4], ["playlist", 6, 7]], "intent label": "AddToPlaylist"}
+{"sentence": "rate this textbook a zero", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 4, 4]], "intent label": "RateBook"}
+{"sentence": "i want to hear any tune from the twenties", "slot label": [["music_item", 5, 5], ["year", 8, 8]], "intent label": "PlayMusic"}
+{"sentence": "play me a top-ten song by phil ochs on groove shark", "slot label": [["sort", 3, 3], ["music_item", 4, 4], ["artist", 6, 7], ["service", 9, 10]], "intent label": "PlayMusic"}
+{"sentence": "find a video game called family dog", "slot label": [["object_type", 2, 3], ["object_name", 5, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "rate awaiting strange gods: weird and lovecraftian fictions a 1", "slot label": [["object_name", 1, 7], ["rating_value", 9, 9]], "intent label": "RateBook"}
+{"sentence": "add lisa m to my guitar hero live playlist", "slot label": [["artist", 1, 2], ["playlist_owner", 4, 4], ["playlist", 5, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "what is the weather forecast for my current place", "slot label": [["current_location", 7, 8]], "intent label": "GetWeather"}
+{"sentence": "add strong to the metal monday playlist", "slot label": [["entity_name", 1, 1], ["playlist", 4, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "where can i find conduct unbecoming", "slot label": [["object_name", 4, 5]], "intent label": "SearchCreativeWork"}
+{"sentence": "will it be freezing in the current position", "slot label": [["condition_temperature", 3, 3], ["current_location", 6, 7]], "intent label": "GetWeather"}
+{"sentence": "add the da brat track to the soak up the sun playlist", "slot label": [["artist", 2, 3], ["music_item", 4, 4], ["playlist", 7, 10]], "intent label": "AddToPlaylist"}
+{"sentence": "add a track to the another glass playlist", "slot label": [["music_item", 2, 2], ["playlist", 5, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "find now and forever", "slot label": [["movie_name", 1, 3]], "intent label": "SearchScreeningEvent"}
+{"sentence": "the workout playlist needs more chris cross", "slot label": [["playlist", 1, 1], ["artist", 5, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "play some jungle music on iheart", "slot label": [["genre", 2, 2], ["service", 5, 5]], "intent label": "PlayMusic"}
+{"sentence": "give 1 point to current textbook", "slot label": [["rating_value", 1, 1], ["object_select", 4, 4], ["object_type", 5, 5]], "intent label": "RateBook"}
+{"sentence": "put no mystery into my punk essentials playlist", "slot label": [["entity_name", 1, 2], ["playlist_owner", 4, 4], ["playlist", 5, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "i want to put look to you on the playlist named 80s classic hits", "slot label": [["entity_name", 4, 6], ["playlist", 11, 13]], "intent label": "AddToPlaylist"}
+{"sentence": "what time is beat the devil coming on at mann theatres", "slot label": [["movie_name", 3, 5], ["location_name", 9, 10]], "intent label": "SearchScreeningEvent"}
+{"sentence": "rate the current chronicle a zero", "slot label": [["object_select", 2, 2], ["object_part_of_series_type", 3, 3], ["rating_value", 5, 5]], "intent label": "RateBook"}
+{"sentence": "add garry shider album to my classical essentials", "slot label": [["artist", 1, 2], ["music_item", 3, 3], ["playlist_owner", 5, 5], ["playlist", 6, 7]], "intent label": "AddToPlaylist"}
+{"sentence": "add the artist cho kyu hyun to funky jams", "slot label": [["music_item", 2, 2], ["artist", 3, 5], ["playlist", 7, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "find the work i looked up", "slot label": [["object_name", 3, 5]], "intent label": "SearchCreativeWork"}
+{"sentence": "play this is colour by panda bear", "slot label": [["track", 1, 3], ["artist", 5, 6]], "intent label": "PlayMusic"}
+{"sentence": "play the god that failed on vimeo", "slot label": [["track", 1, 4], ["service", 6, 6]], "intent label": "PlayMusic"}
+{"sentence": "can i get the butterfly crush showings", "slot label": [["movie_name", 4, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "add hanging on to my just dance by aftercluv playlist", "slot label": [["entity_name", 1, 2], ["playlist_owner", 4, 4], ["playlist", 5, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "show me when scandalous john is playing", "slot label": [["movie_name", 3, 4]], "intent label": "SearchScreeningEvent"}
+{"sentence": "a day no pigs would die deserves a best rating of 6 and a value of 4", "slot label": [["best_rating", 11, 11], ["rating_value", 16, 16]], "intent label": "RateBook"}
+{"sentence": "for my crossfit playlist add the soul sessions volume 2", "slot label": [["playlist_owner", 1, 1], ["playlist", 2, 2], ["entity_name", 5, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "play some james cleveland", "slot label": [["artist", 2, 3]], "intent label": "PlayMusic"}
+{"sentence": "put this tune on dancepop", "slot label": [["music_item", 2, 2], ["playlist", 4, 4]], "intent label": "AddToPlaylist"}
+{"sentence": "what time will paris by night aired", "slot label": [["movie_name", 3, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "play music on spotify", "slot label": [["service", 3, 3]], "intent label": "PlayMusic"}
+{"sentence": "i want a matt garrison tune in my fresh finds fire emoji playlist", "slot label": [["artist", 3, 4], ["music_item", 5, 5], ["playlist_owner", 7, 7], ["playlist", 8, 11]], "intent label": "AddToPlaylist"}
+{"sentence": "will there be snowfall at six pm in leisure knoll california", "slot label": [["condition_description", 3, 3], ["timeRange", 5, 6], ["city", 8, 9], ["state", 10, 10]], "intent label": "GetWeather"}
+{"sentence": "search for the television show me and my guitar", "slot label": [["object_type", 3, 4], ["object_name", 5, 8]], "intent label": "SearchCreativeWork"}
+{"sentence": "tell me when it will be chilly in chicken  united kingdom", "slot label": [["condition_temperature", 6, 6], ["city", 8, 8], ["country", 9, 10]], "intent label": "GetWeather"}
+{"sentence": "is it windy in telogia", "slot label": [["condition_description", 2, 2], ["city", 4, 4]], "intent label": "GetWeather"}
+{"sentence": "find a tv show called revenge of the nerds", "slot label": [["object_type", 2, 3], ["object_name", 5, 8]], "intent label": "SearchCreativeWork"}
+{"sentence": "find the video game called turnin me on", "slot label": [["object_type", 2, 3], ["object_name", 5, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "play the song i get ideas as performed by richard kruspe", "slot label": [["music_item", 2, 2], ["track", 3, 5], ["artist", 9, 10]], "intent label": "PlayMusic"}
+{"sentence": "add turk to the deep house playlist", "slot label": [["artist", 1, 1], ["playlist", 4, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "find a reservation at fish express", "slot label": [["restaurant_name", 4, 5]], "intent label": "BookRestaurant"}
+{"sentence": "check the forecast for the current spot in the future oct  19  2037", "slot label": [["current_location", 5, 6], ["timeRange", 10, 12]], "intent label": "GetWeather"}
+{"sentence": "how can i view the show corpus: a home movie about selena", "slot label": [["object_type", 5, 5], ["object_name", 6, 11]], "intent label": "SearchCreativeWork"}
+{"sentence": "i would rate that old ace in the hole one stars and a best rating of 6", "slot label": [["object_name", 3, 8], ["rating_value", 9, 9], ["rating_unit", 10, 10], ["best_rating", 16, 16]], "intent label": "RateBook"}
+{"sentence": "add the rating for this current series a four out of 6 points", "slot label": [["object_select", 5, 5], ["object_part_of_series_type", 6, 6], ["rating_value", 8, 8], ["best_rating", 11, 11], ["rating_unit", 12, 12]], "intent label": "RateBook"}
+{"sentence": "add justin mcroberts to this is chopin", "slot label": [["artist", 1, 2], ["playlist", 4, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "book a bar that serves italian-american cuisine neighboring wilson av for one person", "slot label": [["restaurant_type", 2, 2], ["served_dish", 5, 6], ["spatial_relation", 7, 7], ["poi", 8, 9], ["party_size_number", 11, 11]], "intent label": "BookRestaurant"}
+{"sentence": "is fog forecast close-by to pakistan", "slot label": [["condition_description", 1, 1], ["spatial_relation", 3, 3], ["country", 5, 5]], "intent label": "GetWeather"}
+{"sentence": "book a restaurant for 3 people at eighteen oclock in saint vincent and the grenadines", "slot label": [["restaurant_type", 2, 2], ["party_size_number", 4, 4], ["timeRange", 7, 7], ["country", 10, 14]], "intent label": "BookRestaurant"}
+{"sentence": "find the schedule for films at night at great escape theatres", "slot label": [["object_type", 2, 2], ["movie_type", 4, 4], ["timeRange", 6, 6], ["location_name", 8, 10]], "intent label": "SearchScreeningEvent"}
+{"sentence": "is there snow in the district of columbia", "slot label": [["condition_description", 2, 2], ["state", 5, 7]], "intent label": "GetWeather"}
+{"sentence": "find a movie schedule", "slot label": [["object_type", 2, 3]], "intent label": "SearchScreeningEvent"}
+{"sentence": "rate the beggar of volubilis 1 out of 6", "slot label": [["object_name", 1, 4], ["rating_value", 5, 5], ["best_rating", 8, 8]], "intent label": "RateBook"}
+{"sentence": "what is the forecast in heber", "slot label": [["city", 5, 5]], "intent label": "GetWeather"}
+{"sentence": "please play an album from 1987", "slot label": [["music_item", 3, 3], ["year", 5, 5]], "intent label": "PlayMusic"}
+{"sentence": "show me the courts of chaos", "slot label": [["object_name", 2, 5]], "intent label": "SearchCreativeWork"}
+{"sentence": "give the current book five stars out of 6", "slot label": [["object_select", 2, 2], ["object_type", 3, 3], ["rating_value", 4, 4], ["rating_unit", 5, 5], ["best_rating", 8, 8]], "intent label": "RateBook"}
+{"sentence": "when is fine  totally fine playing", "slot label": [["movie_name", 2, 4]], "intent label": "SearchScreeningEvent"}
+{"sentence": "add a tune to clásicos del hip hop español", "slot label": [["music_item", 2, 2], ["playlist", 4, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "play jawad ahmad", "slot label": [["artist", 1, 2]], "intent label": "PlayMusic"}
+{"sentence": "what is the forecast for in 1 second at monte sereno for freezing temps", "slot label": [["timeRange", 5, 7], ["city", 9, 10], ["condition_temperature", 12, 12]], "intent label": "GetWeather"}
+{"sentence": "i would like to eat fast food and have a party of two in kentucky", "slot label": [["restaurant_type", 5, 6], ["party_size_number", 12, 12], ["state", 14, 14]], "intent label": "BookRestaurant"}
+{"sentence": "play music from itunes for ric grech", "slot label": [["service", 3, 3], ["artist", 5, 6]], "intent label": "PlayMusic"}
+{"sentence": "add jennie  jennie to my metal playlist", "slot label": [["entity_name", 1, 2], ["playlist_owner", 4, 4], ["playlist", 5, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "show the tv show the last samurai", "slot label": [["object_type", 2, 3], ["object_name", 4, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "add rob tyner to betsy s we everywhere", "slot label": [["artist", 1, 2], ["playlist_owner", 4, 5], ["playlist", 6, 7]], "intent label": "AddToPlaylist"}
+{"sentence": "show me the weather forecast for the city of spencer", "slot label": [["city", 9, 9]], "intent label": "GetWeather"}
+{"sentence": "how is the weather in getzville  minnesota", "slot label": [["city", 5, 5], ["state", 6, 6]], "intent label": "GetWeather"}
+{"sentence": "what is dear old girl cooper foundation", "slot label": [["movie_name", 2, 4], ["location_name", 5, 6]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i need a weather forecast for são tomé and príncipe on december 8th  2026", "slot label": [["country", 6, 9], ["timeRange", 11, 13]], "intent label": "GetWeather"}
+{"sentence": "what animated movies are showing in the area", "slot label": [["movie_type", 1, 2], ["spatial_relation", 5, 7]], "intent label": "SearchScreeningEvent"}
+{"sentence": "tell me the weather forecast for april 15  2019 here", "slot label": [["timeRange", 6, 8], ["current_location", 9, 9]], "intent label": "GetWeather"}
+{"sentence": "play the track asleep in the deep", "slot label": [["music_item", 2, 2], ["track", 3, 6]], "intent label": "PlayMusic"}
+{"sentence": "play kurt cobain ballad tunes", "slot label": [["artist", 1, 2], ["music_item", 3, 3]], "intent label": "PlayMusic"}
+{"sentence": "can you add a track to my spain top 50 playlist", "slot label": [["music_item", 4, 4], ["playlist_owner", 6, 6], ["playlist", 7, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "at meal time while i m here will it be hot", "slot label": [["timeRange", 1, 1], ["current_location", 6, 6], ["condition_temperature", 10, 10]], "intent label": "GetWeather"}
+{"sentence": "can you find me the magic hour song", "slot label": [["object_name", 5, 6], ["object_type", 7, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "add mary wells sings my guy to the electro sur playlist", "slot label": [["entity_name", 1, 5], ["playlist", 8, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "play some kyle ward from the seventies", "slot label": [["artist", 2, 3], ["year", 6, 6]], "intent label": "PlayMusic"}
+{"sentence": "book a table around london borough of ealing that is highly rated in a gluten free bar", "slot label": [["spatial_relation", 3, 3], ["poi", 4, 7], ["sort", 10, 11], ["cuisine", 14, 15], ["restaurant_type", 16, 16]], "intent label": "BookRestaurant"}
+{"sentence": "when is crime and punishment u s a  showing", "slot label": [["movie_name", 2, 7]], "intent label": "SearchScreeningEvent"}
+{"sentence": "will it snowstorm in long lake national wildlife refuge", "slot label": [["condition_description", 2, 2], ["geographic_poi", 4, 8]], "intent label": "GetWeather"}
+{"sentence": "rate current essay a zero", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 4, 4]], "intent label": "RateBook"}
+{"sentence": "book me a reservation at a bar around juliff for three people that serves bucatini for now", "slot label": [["restaurant_type", 6, 6], ["spatial_relation", 7, 7], ["city", 8, 8], ["party_size_number", 10, 10], ["served_dish", 14, 14], ["timeRange", 16, 16]], "intent label": "BookRestaurant"}
+{"sentence": "book a highly rated place in in in seven years  at a pub", "slot label": [["sort", 2, 3], ["state", 6, 6], ["timeRange", 7, 9], ["restaurant_type", 12, 12]], "intent label": "BookRestaurant"}
+{"sentence": "what time is southern theatres showing ukraine is not a brothel", "slot label": [["location_name", 3, 4], ["movie_name", 6, 10]], "intent label": "SearchScreeningEvent"}
+{"sentence": "add this album ny bill callahan to my mi casa es la tuya playlist oficial list", "slot label": [["music_item", 2, 2], ["artist", 4, 5], ["playlist_owner", 7, 7], ["playlist", 8, 14]], "intent label": "AddToPlaylist"}
+{"sentence": "find a soundtrack called pax warrior", "slot label": [["object_type", 2, 2], ["object_name", 4, 5]], "intent label": "SearchCreativeWork"}
+{"sentence": "book a table for ten for breakfast in minnesota", "slot label": [["party_size_number", 4, 4], ["timeRange", 6, 6], ["state", 8, 8]], "intent label": "BookRestaurant"}
+{"sentence": "what is the local movie schedule", "slot label": [["object_type", 4, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "book a restaurant for three on feb  18", "slot label": [["restaurant_type", 2, 2], ["party_size_number", 4, 4], ["timeRange", 6, 7]], "intent label": "BookRestaurant"}
+{"sentence": "i d like to know what movies are on the movie schedules nearby", "slot label": [["movie_type", 6, 6], ["object_type", 10, 11], ["spatial_relation", 12, 12]], "intent label": "SearchScreeningEvent"}
+{"sentence": "please make me reservations somewhere for eight people in foley  nv", "slot label": [["party_size_number", 6, 6], ["city", 9, 9], ["state", 10, 10]], "intent label": "BookRestaurant"}
+{"sentence": "she me movie times at mann theatres", "slot label": [["object_type", 2, 3], ["location_name", 5, 6]], "intent label": "SearchScreeningEvent"}
+{"sentence": "find the picture ultima vi: the false prophet", "slot label": [["object_type", 2, 2], ["object_name", 3, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "play the best album from the seventies", "slot label": [["sort", 2, 2], ["music_item", 3, 3], ["year", 6, 6]], "intent label": "PlayMusic"}
+{"sentence": "add kylie minogue to my novedades viernes sudamérica playlist", "slot label": [["artist", 1, 2], ["playlist_owner", 4, 4], ["playlist", 5, 7]], "intent label": "AddToPlaylist"}
+{"sentence": "is it freezing in colorado", "slot label": [["condition_temperature", 2, 2], ["state", 4, 4]], "intent label": "GetWeather"}
+{"sentence": "the last hawk gets a total of 3 out of 6 stars from me", "slot label": [["rating_value", 7, 7], ["best_rating", 10, 10], ["rating_unit", 11, 11]], "intent label": "RateBook"}
+{"sentence": "will it be stormy in ma", "slot label": [["condition_description", 3, 3], ["state", 5, 5]], "intent label": "GetWeather"}
+{"sentence": "play pop 2017 picks", "slot label": [["playlist", 1, 3]], "intent label": "PlayMusic"}
+{"sentence": "play some theme songs from 1974", "slot label": [["music_item", 2, 2], ["year", 5, 5]], "intent label": "PlayMusic"}
+{"sentence": "what will the weather be in la at 9 o clock", "slot label": [["state", 6, 6], ["timeRange", 8, 10]], "intent label": "GetWeather"}
+{"sentence": "can you add xanadu to latin alternative music", "slot label": [["entity_name", 3, 3], ["playlist", 5, 7]], "intent label": "AddToPlaylist"}
+{"sentence": "can you find me the naked city – justice with a bullet album", "slot label": [["object_name", 5, 11], ["object_type", 12, 12]], "intent label": "SearchCreativeWork"}
+{"sentence": "please search the work  eve-olution", "slot label": [["object_name", 4, 4]], "intent label": "SearchCreativeWork"}
+{"sentence": "add i dreamt of a dragon to my futuros hits playlist", "slot label": [["entity_name", 1, 5], ["playlist_owner", 7, 7], ["playlist", 8, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "add this artist to the laugh list", "slot label": [["music_item", 2, 2], ["playlist", 4, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "i d like to eat at a restaurant around china with a party of 7 anywhere that serves ouzeri", "slot label": [["restaurant_type", 7, 7], ["spatial_relation", 8, 8], ["country", 9, 9], ["party_size_number", 14, 14], ["cuisine", 18, 18]], "intent label": "BookRestaurant"}
+{"sentence": "the sleep machine waterscapes playlist needs some kris chetan ramlu in it", "slot label": [["artist", 7, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "rate the current chronicle five stars", "slot label": [["object_select", 2, 2], ["object_part_of_series_type", 3, 3], ["rating_value", 4, 4], ["rating_unit", 5, 5]], "intent label": "RateBook"}
+{"sentence": "rate this novel five of 6", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 3, 3], ["best_rating", 5, 5]], "intent label": "RateBook"}
+{"sentence": "my rating for the eiffel tower and other mythologies is 0 out of 6 stars", "slot label": [["object_name", 3, 8], ["rating_value", 10, 10], ["best_rating", 13, 13], ["rating_unit", 14, 14]], "intent label": "RateBook"}
+{"sentence": "i d like a table for midday at the unseen bean", "slot label": [["timeRange", 6, 6], ["restaurant_name", 8, 10]], "intent label": "BookRestaurant"}
+{"sentence": "where can i see the movie across the line: the exodus of charlie wright", "slot label": [["object_type", 5, 5], ["object_name", 6, 13]], "intent label": "SearchCreativeWork"}
+{"sentence": "turn on spotify to tiny tim ep", "slot label": [["service", 2, 2], ["artist", 4, 5], ["music_item", 6, 6]], "intent label": "PlayMusic"}
+{"sentence": "what are the movie schedules", "slot label": [["object_type", 3, 4]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i want a table for me and my kids in turkey at a neighboring restaurant", "slot label": [["party_size_description", 5, 8], ["country", 10, 10], ["spatial_relation", 13, 13], ["restaurant_type", 14, 14]], "intent label": "BookRestaurant"}
+{"sentence": "play a top 5 song from wally bastian on google music", "slot label": [["sort", 2, 3], ["music_item", 4, 4], ["artist", 6, 7], ["service", 9, 10]], "intent label": "PlayMusic"}
+{"sentence": "please search the ironbound picture", "slot label": [["object_name", 3, 3], ["object_type", 4, 4]], "intent label": "SearchCreativeWork"}
+{"sentence": "put a gary clark song into the soul bpm playlist", "slot label": [["artist", 2, 3], ["music_item", 4, 4], ["playlist", 7, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "will it be hot on orthodox good friday in michigan and close-by", "slot label": [["condition_temperature", 3, 3], ["timeRange", 5, 7], ["state", 9, 9], ["spatial_relation", 11, 11]], "intent label": "GetWeather"}
+{"sentence": "i want to see the television show called cuts both ways", "slot label": [["object_type", 5, 6], ["object_name", 8, 10]], "intent label": "SearchCreativeWork"}
+{"sentence": "i d like to reserve a table at a pub that serves andouillettes within the same area in san marino", "slot label": [["restaurant_type", 9, 9], ["served_dish", 12, 12], ["spatial_relation", 13, 16], ["country", 18, 19]], "intent label": "BookRestaurant"}
+{"sentence": "what is the weather like in hurstville", "slot label": [["city", 6, 6]], "intent label": "GetWeather"}
+{"sentence": "put this album on my wild country playlist", "slot label": [["music_item", 2, 2], ["playlist_owner", 4, 4], ["playlist", 5, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "rate this textbook 2 out of 6", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 3, 3], ["best_rating", 6, 6]], "intent label": "RateBook"}
+{"sentence": "search for the complots", "slot label": [["object_name", 3, 3]], "intent label": "SearchCreativeWork"}
+{"sentence": "find the schedule for the band of honest men at the nearest movie theatre", "slot label": [["object_type", 2, 2], ["movie_name", 4, 8], ["spatial_relation", 11, 11], ["object_location_type", 12, 13]], "intent label": "SearchScreeningEvent"}
+{"sentence": "what will the weather be in waverly city brazil on purple heart day", "slot label": [["city", 6, 7], ["country", 8, 8], ["timeRange", 10, 12]], "intent label": "GetWeather"}
+{"sentence": "what is the weather forecast in delaware", "slot label": [["state", 6, 6]], "intent label": "GetWeather"}
+{"sentence": "play a top-50 tune from 1982", "slot label": [["sort", 2, 2], ["music_item", 3, 3], ["year", 5, 5]], "intent label": "PlayMusic"}
+{"sentence": "play shinji miyazaki s music on netflix", "slot label": [["artist", 1, 2], ["service", 6, 6]], "intent label": "PlayMusic"}
+{"sentence": "can i get the game list of mew singles", "slot label": [["object_type", 4, 4], ["object_name", 5, 8]], "intent label": "SearchCreativeWork"}
+{"sentence": "what s the forecast for belize around meal time", "slot label": [["country", 5, 5], ["timeRange", 7, 7]], "intent label": "GetWeather"}
+{"sentence": "add gary lachman track to jazz for loving couples playlist", "slot label": [["artist", 1, 2], ["music_item", 3, 3], ["playlist", 5, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "find the path to power", "slot label": [["object_name", 1, 4]], "intent label": "SearchCreativeWork"}
+{"sentence": "put artist paulinho da costa on my very nearly nashville playlist", "slot label": [["music_item", 1, 1], ["artist", 2, 4], ["playlist_owner", 6, 6], ["playlist", 7, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "i am looking for the work: nikki", "slot label": [["object_name", 6, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "what s the weather in low moor", "slot label": [["city", 5, 6]], "intent label": "GetWeather"}
+{"sentence": "play some nineties music", "slot label": [["year", 2, 2]], "intent label": "PlayMusic"}
+{"sentence": "find a television show called swing high", "slot label": [["object_type", 2, 3], ["object_name", 5, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "use netflix to play bizzy bone kiss me goodnight  sergeant major", "slot label": [["service", 1, 1], ["artist", 4, 5], ["track", 6, 10]], "intent label": "PlayMusic"}
+{"sentence": "i d like to see movie schedules for kerasotes theatres", "slot label": [["object_type", 5, 6], ["location_name", 8, 9]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i want these are the days added to my spotlight spain 2016 playlist", "slot label": [["entity_name", 2, 5], ["playlist_owner", 8, 8], ["playlist", 9, 11]], "intent label": "AddToPlaylist"}
+{"sentence": "play the greatest soundtrack by nhat son on last fm", "slot label": [["sort", 2, 2], ["music_item", 3, 3], ["artist", 5, 6], ["service", 8, 9]], "intent label": "PlayMusic"}
+{"sentence": "what is the tv series in app store", "slot label": [["object_type", 3, 4], ["object_name", 6, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "book the space aliens grill & bar in hord wy for feb  the twenty-seventh", "slot label": [["restaurant_name", 2, 6], ["city", 8, 8], ["state", 9, 9], ["timeRange", 11, 13]], "intent label": "BookRestaurant"}
+{"sentence": "find a saga called set sail the prairie", "slot label": [["object_type", 2, 2], ["object_name", 4, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "can jovino santos neto s album get added to my confidence boost playlist", "slot label": [["artist", 1, 3], ["music_item", 5, 5], ["playlist_owner", 9, 9], ["playlist", 10, 11]], "intent label": "AddToPlaylist"}
+{"sentence": "show animated movies in nearest movie theatre", "slot label": [["movie_type", 1, 2], ["spatial_relation", 4, 4], ["object_location_type", 5, 6]], "intent label": "SearchScreeningEvent"}
+{"sentence": "find the game company of heroes", "slot label": [["object_type", 2, 2], ["object_name", 3, 5]], "intent label": "SearchCreativeWork"}
+{"sentence": "where can i find paranormal activity 3 playing near me 1 hour from now", "slot label": [["movie_name", 4, 6], ["timeRange", 10, 13]], "intent label": "SearchScreeningEvent"}
+{"sentence": "book a table this evening in saint vincent and the grenadines at a gastropub", "slot label": [["timeRange", 4, 4], ["country", 6, 10], ["restaurant_type", 13, 13]], "intent label": "BookRestaurant"}
+{"sentence": "can i listen to dj vibe s top 10", "slot label": [["artist", 4, 5], ["sort", 7, 8]], "intent label": "PlayMusic"}
+{"sentence": "what films are at the nearest cinema", "slot label": [["movie_type", 1, 1], ["spatial_relation", 5, 5], ["object_location_type", 6, 6]], "intent label": "SearchScreeningEvent"}
+{"sentence": "what is the weather like in north salt lake and afghanistan", "slot label": [["city", 6, 8], ["country", 10, 10]], "intent label": "GetWeather"}
+{"sentence": "can you tell me the actors of the saga awards/", "slot label": [["object_name", 5, 5], ["object_type", 8, 8]], "intent label": "SearchCreativeWork"}
+{"sentence": "go to my all out 00s and add brian wilson", "slot label": [["playlist_owner", 2, 2], ["playlist", 3, 5], ["artist", 8, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "food truck in panama for five", "slot label": [["country", 3, 3], ["party_size_number", 5, 5]], "intent label": "BookRestaurant"}
+{"sentence": "look up the movie schedule", "slot label": [["object_type", 3, 4]], "intent label": "SearchScreeningEvent"}
+{"sentence": "book a table for chasity ruiz and mary at the fat duck in puerto rico", "slot label": [["party_size_description", 4, 7], ["restaurant_name", 9, 11], ["country", 13, 14]], "intent label": "BookRestaurant"}
+{"sentence": "find the gill deacon show", "slot label": [["object_name", 1, 4]], "intent label": "SearchCreativeWork"}
+{"sentence": "find the movie schedule for films in the area", "slot label": [["object_type", 2, 3], ["movie_type", 5, 5], ["spatial_relation", 6, 8]], "intent label": "SearchScreeningEvent"}
+{"sentence": "will i be able to watch camping-car at movie house at 6 pm", "slot label": [["movie_name", 6, 6], ["object_location_type", 8, 9], ["timeRange", 11, 12]], "intent label": "SearchScreeningEvent"}
+{"sentence": "play how does it work by helen carter", "slot label": [["album", 1, 4], ["artist", 6, 7]], "intent label": "PlayMusic"}
+{"sentence": "what s the weather like in schenectady ma", "slot label": [["city", 6, 6], ["state", 7, 7]], "intent label": "GetWeather"}
+{"sentence": "play some folk-rock music", "slot label": [["genre", 2, 2]], "intent label": "PlayMusic"}
+{"sentence": "give this current book zero out of 6", "slot label": [["object_select", 2, 2], ["object_type", 3, 3], ["rating_value", 4, 4], ["best_rating", 7, 7]], "intent label": "RateBook"}
+{"sentence": "rate this album 5 points", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 3, 3], ["rating_unit", 4, 4]], "intent label": "RateBook"}
+{"sentence": "how is the weather right now at my current place", "slot label": [["timeRange", 5, 5], ["current_location", 8, 9]], "intent label": "GetWeather"}
+{"sentence": "play sixties music by giovanni battista guadagnini", "slot label": [["year", 1, 1], ["artist", 4, 6]], "intent label": "PlayMusic"}
+{"sentence": "tell me the weather forecast close by brown county state park for meal time", "slot label": [["spatial_relation", 5, 6], ["geographic_poi", 7, 10], ["timeRange", 12, 12]], "intent label": "GetWeather"}
+{"sentence": "play the last wellman braud album relaesd", "slot label": [["artist", 3, 4], ["music_item", 5, 5]], "intent label": "PlayMusic"}
+{"sentence": "play sugar baby by frank beard", "slot label": [["track", 1, 2], ["artist", 4, 5]], "intent label": "PlayMusic"}
+{"sentence": "find the schedule for the solitude of prime numbers at the nearest cinema in 1 hour", "slot label": [["object_type", 2, 2], ["movie_name", 4, 8], ["spatial_relation", 11, 11], ["object_location_type", 12, 12], ["timeRange", 13, 15]], "intent label": "SearchScreeningEvent"}
+{"sentence": "play the discografia de the pretty reckless saga", "slot label": [["object_name", 2, 6], ["object_type", 7, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "i want to give the current textbook 0 out of 6 stars", "slot label": [["object_select", 5, 5], ["object_type", 6, 6], ["rating_value", 7, 7], ["best_rating", 10, 10], ["rating_unit", 11, 11]], "intent label": "RateBook"}
+{"sentence": "show me movie times for animated movies playing three hours from now in the neighbourhood", "slot label": [["object_type", 2, 3], ["movie_type", 5, 6], ["timeRange", 8, 11], ["spatial_relation", 12, 14]], "intent label": "SearchScreeningEvent"}
+{"sentence": "find the game just dance greatest hits", "slot label": [["object_type", 2, 2], ["object_name", 3, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "add this track to the sin ti playlist", "slot label": [["music_item", 2, 2], ["playlist", 5, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "show me the closest movie house playing an unfinished life at eight pm", "slot label": [["spatial_relation", 3, 3], ["object_location_type", 4, 5], ["movie_name", 7, 9], ["timeRange", 11, 12]], "intent label": "SearchScreeningEvent"}
+{"sentence": "what s it like in bahrain right now", "slot label": [["country", 5, 5], ["timeRange", 7, 7]], "intent label": "GetWeather"}
+{"sentence": "can you add blood on the face to the playlist called heartland country", "slot label": [["entity_name", 3, 6], ["playlist", 11, 12]], "intent label": "AddToPlaylist"}
+{"sentence": "on jan  the twentieth what will it feel like in ct or the area not far from it", "slot label": [["timeRange", 1, 3], ["state", 10, 10], ["spatial_relation", 14, 15]], "intent label": "GetWeather"}
+{"sentence": "i need a table in uruguay in 213 days when it s chillier", "slot label": [["country", 5, 5], ["timeRange", 6, 8], ["condition_temperature", 12, 12]], "intent label": "GetWeather"}
+{"sentence": "add this track by horace andy to acoustic soul", "slot label": [["music_item", 2, 2], ["artist", 4, 5], ["playlist", 7, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "plan an album by roni duani", "slot label": [["music_item", 2, 2], ["artist", 4, 5]], "intent label": "PlayMusic"}
+{"sentence": "add song to siesta", "slot label": [["music_item", 1, 1], ["playlist", 3, 3]], "intent label": "AddToPlaylist"}
+{"sentence": "can you tell me the weather forecast for samoa", "slot label": [["country", 8, 8]], "intent label": "GetWeather"}
+{"sentence": "play music on youtube", "slot label": [["service", 3, 3]], "intent label": "PlayMusic"}
+{"sentence": "add spirit touches ground to my leche con chocolate list", "slot label": [["entity_name", 1, 3], ["playlist_owner", 5, 5], ["playlist", 6, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "i need a table for 1 minute from now at any pub for five around in that also serves fisn n chips", "slot label": [["timeRange", 5, 8], ["restaurant_type", 11, 11], ["party_size_number", 13, 13], ["spatial_relation", 14, 14], ["state", 15, 15], ["served_dish", 19, 21]], "intent label": "BookRestaurant"}
+{"sentence": "book a spot at the food truck in ma", "slot label": [["restaurant_type", 5, 6], ["state", 8, 8]], "intent label": "BookRestaurant"}
+{"sentence": "21 weeks from now elinor  crystal turner and nita want to eat german food at a bar in distant california", "slot label": [["party_size_description", 4, 8], ["cuisine", 12, 12], ["restaurant_type", 16, 16], ["spatial_relation", 18, 18], ["state", 19, 19]], "intent label": "BookRestaurant"}
+{"sentence": "find a tv show called ruthless", "slot label": [["object_type", 2, 3], ["object_name", 5, 5]], "intent label": "SearchCreativeWork"}
+{"sentence": "find animated movies close by with a movie schedule", "slot label": [["movie_type", 1, 2], ["spatial_relation", 3, 4], ["object_type", 7, 8]], "intent label": "SearchScreeningEvent"}
+{"sentence": "book a spot for 7 at an outdoor food court in denmark", "slot label": [["party_size_number", 4, 4], ["facility", 7, 7], ["restaurant_type", 8, 9], ["country", 11, 11]], "intent label": "BookRestaurant"}
+{"sentence": "i would rate the persistence of vision 1 stars and a best rating of 6", "slot label": [["object_name", 3, 6], ["rating_value", 7, 7], ["rating_unit", 8, 8], ["best_rating", 14, 14]], "intent label": "RateBook"}
+{"sentence": "i need a reservation for february 27  2020 at a bar that serves paté", "slot label": [["timeRange", 5, 7], ["restaurant_type", 10, 10], ["served_dish", 13, 13]], "intent label": "BookRestaurant"}
+{"sentence": "find the ghost of tom joad", "slot label": [["object_name", 1, 5]], "intent label": "SearchCreativeWork"}
+{"sentence": "i need a reservation for ten at a tavern in west virginia", "slot label": [["party_size_number", 5, 5], ["restaurant_type", 8, 8], ["state", 10, 11]], "intent label": "BookRestaurant"}
+{"sentence": "what time is children of divorce playing", "slot label": [["movie_name", 3, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "will there be a blizzard in white house curacao", "slot label": [["condition_description", 4, 4], ["city", 6, 7], ["country", 8, 8]], "intent label": "GetWeather"}
+{"sentence": "play the top melody from artist maakii", "slot label": [["sort", 2, 2], ["music_item", 3, 3], ["artist", 6, 6]], "intent label": "PlayMusic"}
+{"sentence": "are any animated movies playing at magic johnson theatres", "slot label": [["movie_type", 2, 3], ["location_name", 6, 8]], "intent label": "SearchScreeningEvent"}
+{"sentence": "give the current album a five", "slot label": [["object_select", 2, 2], ["object_type", 3, 3], ["rating_value", 5, 5]], "intent label": "RateBook"}
+{"sentence": "i want to add digital line to my playlist called infantil", "slot label": [["entity_name", 4, 5], ["playlist_owner", 7, 7], ["playlist", 10, 10]], "intent label": "AddToPlaylist"}
+{"sentence": "the current essay gets four points", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 4, 4], ["rating_unit", 5, 5]], "intent label": "RateBook"}
+{"sentence": "what will the weather be in grand coteau ut at six pm", "slot label": [["city", 6, 7], ["state", 8, 8], ["timeRange", 10, 11]], "intent label": "GetWeather"}
+{"sentence": "can you find me a trailer for phineas redux", "slot label": [["object_type", 5, 5], ["object_name", 7, 8]], "intent label": "SearchCreativeWork"}
+{"sentence": "add the singer ivan roudyk to my fairy tales playlists", "slot label": [["artist", 3, 4], ["playlist_owner", 6, 6], ["playlist", 7, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "add song in my playlist dance workout", "slot label": [["music_item", 1, 1], ["playlist_owner", 3, 3], ["playlist", 5, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "what movies can i see in the area", "slot label": [["movie_type", 1, 1], ["spatial_relation", 5, 7]], "intent label": "SearchScreeningEvent"}
+{"sentence": "tell me what films are playing at plitt theatres", "slot label": [["movie_type", 3, 3], ["location_name", 7, 8]], "intent label": "SearchScreeningEvent"}
+{"sentence": "add in the heart of the world to the epic gaming playlist", "slot label": [["entity_name", 1, 6], ["playlist", 9, 10]], "intent label": "AddToPlaylist"}
+{"sentence": "find movie times", "slot label": [["object_type", 1, 2]], "intent label": "SearchScreeningEvent"}
+{"sentence": "rate the book english grammar in use a five", "slot label": [["object_type", 2, 2], ["object_name", 3, 6], ["rating_value", 8, 8]], "intent label": "RateBook"}
+{"sentence": "play tujiko noriko s ten years and running", "slot label": [["artist", 1, 2], ["album", 4, 7]], "intent label": "PlayMusic"}
+{"sentence": "add the song to the soundscapes for gaming playlist", "slot label": [["music_item", 2, 2], ["playlist", 5, 7]], "intent label": "AddToPlaylist"}
+{"sentence": "can you put a song by jessica mauboy on my playlist entitled a sudden rainstorm", "slot label": [["music_item", 4, 4], ["artist", 6, 7], ["playlist_owner", 9, 9], ["playlist", 12, 14]], "intent label": "AddToPlaylist"}
+{"sentence": "show movie schedule", "slot label": [["object_type", 1, 2]], "intent label": "SearchScreeningEvent"}
+{"sentence": "show me movie schedules for today", "slot label": [["object_type", 2, 3]], "intent label": "SearchScreeningEvent"}
+{"sentence": "add cecil womack to my 50 great female voices playlist", "slot label": [["artist", 1, 2], ["playlist_owner", 4, 4], ["playlist", 5, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "will it be freezing here in 9 seconds", "slot label": [["condition_temperature", 3, 3], ["current_location", 4, 4], ["timeRange", 5, 7]], "intent label": "GetWeather"}
+{"sentence": "forecast for serbia", "slot label": [["country", 2, 2]], "intent label": "GetWeather"}
+{"sentence": "i want to give a mortal flower a two", "slot label": [["object_name", 4, 6], ["rating_value", 8, 8]], "intent label": "RateBook"}
+{"sentence": "where can i view the picture reaching horizons", "slot label": [["object_type", 5, 5], ["object_name", 6, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "in hawaii will it be warmer at 3 am", "slot label": [["state", 1, 1], ["condition_temperature", 5, 5], ["timeRange", 7, 8]], "intent label": "GetWeather"}
+{"sentence": "rate the little book four stars", "slot label": [["object_name", 1, 3], ["rating_value", 4, 4], ["rating_unit", 5, 5]], "intent label": "RateBook"}
+{"sentence": "rate the current textbook one of 6 stars", "slot label": [["object_select", 2, 2], ["object_type", 3, 3], ["rating_value", 4, 4], ["best_rating", 6, 6], ["rating_unit", 7, 7]], "intent label": "RateBook"}
+{"sentence": "i want a table for five at a restaurant with latin food in arkansas for 1 hour from now", "slot label": [["party_size_number", 5, 5], ["restaurant_type", 8, 8], ["cuisine", 10, 10], ["state", 13, 13], ["timeRange", 15, 18]], "intent label": "BookRestaurant"}
+{"sentence": "find love will tear us apart  a photograph", "slot label": [["object_name", 1, 5], ["object_type", 7, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "please play me a popular track from 1984", "slot label": [["sort", 4, 4], ["music_item", 5, 5], ["year", 7, 7]], "intent label": "PlayMusic"}
+{"sentence": "book a mediterranean restaurant for my sister and i", "slot label": [["cuisine", 2, 2], ["restaurant_type", 3, 3], ["party_size_description", 5, 8]], "intent label": "BookRestaurant"}
+{"sentence": "how will the weather be different 5 years from now in waconia", "slot label": [["timeRange", 6, 9], ["city", 11, 11]], "intent label": "GetWeather"}
+{"sentence": "search for teenage mutant hero turtles: fall of the foot clan photograph", "slot label": [["object_name", 2, 10], ["object_type", 11, 11]], "intent label": "SearchCreativeWork"}
+{"sentence": "play party anthems", "slot label": [["playlist", 1, 2]], "intent label": "PlayMusic"}
+{"sentence": "what is the niceville forecast in fm", "slot label": [["city", 3, 3], ["state", 6, 6]], "intent label": "GetWeather"}
+{"sentence": "find heat wave", "slot label": [["movie_name", 1, 2]], "intent label": "SearchScreeningEvent"}
+{"sentence": "which is the nearest movie house playing the diary of anne frank", "slot label": [["spatial_relation", 3, 3], ["object_location_type", 4, 5], ["movie_name", 7, 11]], "intent label": "SearchScreeningEvent"}
+{"sentence": "can i have the movie schedule for imax corporation", "slot label": [["object_type", 4, 5], ["location_name", 7, 8]], "intent label": "SearchScreeningEvent"}
+{"sentence": "book me a reservation for eight for the top-rated bakery eleven hours from now in mango", "slot label": [["party_size_number", 5, 5], ["sort", 8, 8], ["restaurant_type", 9, 9], ["timeRange", 10, 13], ["city", 15, 15]], "intent label": "BookRestaurant"}
+{"sentence": "play yung joc on slacker", "slot label": [["artist", 1, 2], ["service", 4, 4]], "intent label": "PlayMusic"}
+{"sentence": "show 50 words for snow creative picture", "slot label": [["object_name", 1, 4], ["object_type", 6, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "play the electrochemical and solid state letters song", "slot label": [["object_name", 2, 6], ["object_type", 7, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "table for 8 at a popular food court", "slot label": [["party_size_number", 2, 2], ["sort", 5, 5], ["restaurant_type", 6, 7]], "intent label": "BookRestaurant"}
+{"sentence": "find me a table for 8 people at a nearby al restaurant one minute from now", "slot label": [["party_size_number", 5, 5], ["spatial_relation", 9, 9], ["state", 10, 10], ["restaurant_type", 11, 11], ["timeRange", 12, 15]], "intent label": "BookRestaurant"}
+{"sentence": "is there rain now in maine", "slot label": [["condition_description", 2, 2], ["timeRange", 3, 3], ["state", 5, 5]], "intent label": "GetWeather"}
+{"sentence": "show me the photograph johnny cash: the complete columbia album collection", "slot label": [["object_type", 3, 3], ["object_name", 4, 10]], "intent label": "SearchCreativeWork"}
+{"sentence": "find movie schedules", "slot label": [["object_type", 1, 2]], "intent label": "SearchScreeningEvent"}
+{"sentence": "find movie schedules for  united paramount theatres", "slot label": [["object_type", 1, 2], ["location_name", 4, 6]], "intent label": "SearchScreeningEvent"}
+{"sentence": "what is the forecast for montana at dinner", "slot label": [["state", 5, 5], ["timeRange", 7, 7]], "intent label": "GetWeather"}
+{"sentence": "please add this track to my de camino playlist", "slot label": [["music_item", 3, 3], ["playlist_owner", 5, 5], ["playlist", 6, 7]], "intent label": "AddToPlaylist"}
+{"sentence": "book me a restaurant please", "slot label": [["restaurant_type", 3, 3]], "intent label": "BookRestaurant"}
+{"sentence": "find drumline: a new beat  a picture", "slot label": [["object_name", 1, 4], ["object_type", 6, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "play the red room sessions from chris cunningham", "slot label": [["album", 1, 4], ["artist", 6, 7]], "intent label": "PlayMusic"}
+{"sentence": "play the great adventures of slick rick game", "slot label": [["object_name", 1, 6], ["object_type", 7, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "list movie schedules for movies playing close by", "slot label": [["object_type", 1, 2], ["movie_type", 4, 4], ["spatial_relation", 6, 7]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i am looking for the tv show called the flight of the lost balloon", "slot label": [["object_type", 5, 6], ["object_name", 9, 13]], "intent label": "SearchCreativeWork"}
+{"sentence": "add david axelrod to my futuros hits list", "slot label": [["artist", 1, 2], ["playlist_owner", 4, 4], ["playlist", 5, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "play me sun ra songs from the fifties", "slot label": [["artist", 2, 3], ["year", 7, 7]], "intent label": "PlayMusic"}
+{"sentence": "add this track to my dinnertime acoustics playist", "slot label": [["music_item", 2, 2], ["playlist_owner", 4, 4], ["playlist", 5, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "add tune to atmospheric black metal playlist", "slot label": [["music_item", 1, 1], ["playlist", 3, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "need to see mother joan of the angels in one second", "slot label": [["movie_name", 3, 7], ["timeRange", 8, 10]], "intent label": "SearchScreeningEvent"}
+{"sentence": "give 2 out of 6 points to the following textbook", "slot label": [["rating_value", 1, 1], ["best_rating", 4, 4], ["rating_unit", 5, 5], ["object_select", 8, 8], ["object_type", 9, 9]], "intent label": "RateBook"}
+{"sentence": "i would like to book a restaurant for two in 42 weeks from now in wagram", "slot label": [["restaurant_type", 6, 6], ["party_size_number", 8, 8], ["timeRange", 10, 13], ["city", 15, 15]], "intent label": "BookRestaurant"}
+{"sentence": "play some last fm music like the 1992 ep from peaches", "slot label": [["service", 2, 3], ["year", 7, 7], ["music_item", 8, 8], ["artist", 10, 10]], "intent label": "PlayMusic"}
+{"sentence": "where is the closest cinema playing a drink in the passage", "slot label": [["spatial_relation", 3, 3], ["object_location_type", 4, 4], ["movie_name", 6, 10]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i m hoping you can find a photograph from live at the isle of wight 1970", "slot label": [["object_type", 7, 7], ["object_name", 9, 15]], "intent label": "SearchCreativeWork"}
+{"sentence": "what movies are around here", "slot label": [["movie_type", 1, 1], ["spatial_relation", 3, 4]], "intent label": "SearchScreeningEvent"}
+{"sentence": "book a restaurant distant from downtown", "slot label": [["restaurant_type", 2, 2], ["spatial_relation", 3, 3], ["poi", 5, 5]], "intent label": "BookRestaurant"}
+{"sentence": "find doggy day school  an album", "slot label": [["object_name", 1, 3], ["object_type", 5, 5]], "intent label": "SearchCreativeWork"}
+{"sentence": "please play bitch please ii", "slot label": [["track", 2, 4]], "intent label": "PlayMusic"}
+{"sentence": "find a video game called young", "slot label": [["object_type", 2, 3], ["object_name", 5, 5]], "intent label": "SearchCreativeWork"}
+{"sentence": "is strauss is playing today at the cineplex odeon corporation", "slot label": [["movie_name", 1, 4], ["location_name", 7, 9]], "intent label": "SearchScreeningEvent"}
+{"sentence": "award this current novel 0 points", "slot label": [["object_select", 2, 2], ["object_type", 3, 3], ["rating_value", 4, 4], ["rating_unit", 5, 5]], "intent label": "RateBook"}
+{"sentence": "weather for this winter here", "slot label": [["timeRange", 2, 3], ["current_location", 4, 4]], "intent label": "GetWeather"}
+{"sentence": "what animated movies are playing at the closest movie theatre", "slot label": [["movie_type", 1, 2], ["spatial_relation", 7, 7], ["object_location_type", 8, 9]], "intent label": "SearchScreeningEvent"}
+{"sentence": "rate this book four of 6 points", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 3, 3], ["best_rating", 5, 5], ["rating_unit", 6, 6]], "intent label": "RateBook"}
+{"sentence": "i want to go see the trouble with girls", "slot label": [["movie_name", 5, 8]], "intent label": "SearchScreeningEvent"}
+{"sentence": "cock-a-doodle-doo was awful  i m giving it a 0 out of 6", "slot label": [["rating_value", 8, 8], ["best_rating", 11, 11]], "intent label": "RateBook"}
+{"sentence": "show me the schedule of films in the neighbourhood", "slot label": [["object_type", 3, 3], ["movie_type", 5, 5], ["spatial_relation", 6, 8]], "intent label": "SearchScreeningEvent"}
+{"sentence": "book a table for nine people in svalbard and jan mayen", "slot label": [["party_size_number", 4, 4], ["country", 7, 10]], "intent label": "BookRestaurant"}
+{"sentence": "i would give french poets and novelists a best rating of 6 and a value of three", "slot label": [["object_name", 3, 6], ["best_rating", 11, 11], ["rating_value", 16, 16]], "intent label": "RateBook"}
+{"sentence": "what animated movies are playing nearby", "slot label": [["movie_type", 1, 2], ["spatial_relation", 5, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "will there be a cloud here at 06:50:20", "slot label": [["condition_description", 4, 4], ["current_location", 5, 5], ["timeRange", 7, 7]], "intent label": "GetWeather"}
+{"sentence": "i want to give the chronicle zombie bums from uranus 3 points", "slot label": [["object_part_of_series_type", 5, 5], ["object_name", 6, 9], ["rating_value", 10, 10], ["rating_unit", 11, 11]], "intent label": "RateBook"}
+{"sentence": "i d like to know when i can see the taking of flight 847: the uli derickson story at amco entertainment", "slot label": [["movie_name", 9, 17], ["location_name", 19, 20]], "intent label": "SearchScreeningEvent"}
+{"sentence": "play is this my world by leo arnaud", "slot label": [["album", 1, 4], ["artist", 6, 7]], "intent label": "PlayMusic"}
+{"sentence": "book a reservation for clinton street baking company & restaurant distant from downtown", "slot label": [["restaurant_name", 4, 9], ["spatial_relation", 10, 10], ["poi", 12, 12]], "intent label": "BookRestaurant"}
+{"sentence": "add nyoil to my this is prince playlist", "slot label": [["artist", 1, 1], ["playlist_owner", 3, 3], ["playlist", 4, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "show me the everybody wants you picture", "slot label": [["object_name", 3, 5], ["object_type", 6, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "find a restaurant in fm that servec quiche", "slot label": [["restaurant_type", 2, 2], ["state", 4, 4], ["served_dish", 7, 7]], "intent label": "BookRestaurant"}
+{"sentence": "i would give this current novel 2 stars with a best rating of 6", "slot label": [["object_select", 4, 4], ["object_type", 5, 5], ["rating_value", 6, 6], ["rating_unit", 7, 7], ["best_rating", 13, 13]], "intent label": "RateBook"}
+{"sentence": "i want to book a pastelaria cafe in alabama for me and my great grandfather", "slot label": [["cuisine", 5, 5], ["restaurant_type", 6, 6], ["state", 8, 8], ["party_size_description", 10, 14]], "intent label": "BookRestaurant"}
+{"sentence": "is hail in the weather forecast for monterey bay national marine sanctuary", "slot label": [["condition_description", 1, 1], ["geographic_poi", 7, 11]], "intent label": "GetWeather"}
+{"sentence": "add tune to sxsw fresh playlist", "slot label": [["music_item", 1, 1], ["playlist", 3, 4]], "intent label": "AddToPlaylist"}
+{"sentence": "make a reservation in a popular sicilian bar place nearby  for me only  tomorrow", "slot label": [["sort", 5, 5], ["cuisine", 6, 6], ["restaurant_type", 7, 7], ["spatial_relation", 9, 9], ["timeRange", 13, 13]], "intent label": "BookRestaurant"}
+{"sentence": "i need a table for 9", "slot label": [["party_size_number", 5, 5]], "intent label": "BookRestaurant"}
+{"sentence": "add this artist to my post-grunge playlist", "slot label": [["music_item", 2, 2], ["playlist_owner", 4, 4], ["playlist", 5, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "rate this album a 2", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 4, 4]], "intent label": "RateBook"}
+{"sentence": "what will the weather be like this tuesday in the area neighboring rendezvous mountain educational state forest", "slot label": [["timeRange", 6, 7], ["spatial_relation", 11, 11], ["geographic_poi", 12, 16]], "intent label": "GetWeather"}
+{"sentence": "i need a table in ottoville on feb  15th  2029 at gus stevens seafood restaurant & buccaneer lounge", "slot label": [["city", 5, 5], ["timeRange", 7, 9], ["restaurant_name", 11, 17]], "intent label": "BookRestaurant"}
+{"sentence": "i need a table for five at childs restaurants in brunei", "slot label": [["party_size_number", 5, 5], ["restaurant_name", 7, 8], ["country", 10, 10]], "intent label": "BookRestaurant"}
+{"sentence": "how do i get the game still on it", "slot label": [["object_type", 5, 5], ["object_name", 6, 8]], "intent label": "SearchCreativeWork"}
+{"sentence": "i would like to make a reservation for 2 for brunch", "slot label": [["party_size_number", 8, 8], ["timeRange", 10, 10]], "intent label": "BookRestaurant"}
+{"sentence": "need a table  for party of five for december 26  2040 in the state of mt", "slot label": [["party_size_number", 6, 6], ["timeRange", 8, 10], ["state", 15, 15]], "intent label": "BookRestaurant"}
+{"sentence": "book me a restaurant for nine in statham", "slot label": [["restaurant_type", 3, 3], ["party_size_number", 5, 5], ["city", 7, 7]], "intent label": "BookRestaurant"}
+{"sentence": "i d like a table for ten in 2 minutes at french horn  sonning eye", "slot label": [["party_size_number", 6, 6], ["timeRange", 7, 9], ["restaurant_name", 11, 14]], "intent label": "BookRestaurant"}
+{"sentence": "find a movie house for 07:52 showing ganges: river to heaven", "slot label": [["object_location_type", 2, 3], ["timeRange", 5, 5], ["movie_name", 7, 10]], "intent label": "SearchScreeningEvent"}
+{"sentence": "what is the michael moore is a big fat stupid white man video game", "slot label": [["object_name", 3, 11], ["object_type", 12, 13]], "intent label": "SearchCreativeWork"}
+{"sentence": "i want to eat close to bowlegs seven years from now", "slot label": [["spatial_relation", 4, 4], ["city", 6, 6], ["timeRange", 7, 10]], "intent label": "BookRestaurant"}
+{"sentence": "for my playlist chill add the name cater fe she", "slot label": [["playlist_owner", 1, 1], ["playlist", 3, 3], ["entity_name", 7, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "search for the halfway home tv show", "slot label": [["object_name", 3, 4], ["object_type", 5, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "find movie times", "slot label": [["object_type", 1, 2]], "intent label": "SearchScreeningEvent"}
+{"sentence": "play journey list", "slot label": [["playlist", 1, 1]], "intent label": "PlayMusic"}
+{"sentence": "tell me what animated movies i can see at the closest movie theatre", "slot label": [["movie_type", 3, 4], ["spatial_relation", 10, 10], ["object_location_type", 11, 12]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i d like to see the trailer tony parker", "slot label": [["object_type", 6, 6], ["object_name", 7, 8]], "intent label": "SearchCreativeWork"}
+{"sentence": "what time is holiday heart showing at the movie house", "slot label": [["movie_name", 3, 4], ["object_location_type", 8, 9]], "intent label": "SearchScreeningEvent"}
+{"sentence": "play the movie white christmas", "slot label": [["object_type", 2, 2], ["object_name", 3, 4]], "intent label": "SearchCreativeWork"}
+{"sentence": "is it forecast to be warm in doi inthanon national park", "slot label": [["condition_temperature", 5, 5], ["geographic_poi", 7, 10]], "intent label": "GetWeather"}
+{"sentence": "add this tune to cristina s endorphin rush playlist", "slot label": [["music_item", 2, 2], ["playlist_owner", 4, 5], ["playlist", 6, 7]], "intent label": "AddToPlaylist"}
+{"sentence": "play a song by nash the slash", "slot label": [["music_item", 2, 2], ["artist", 4, 6]], "intent label": "PlayMusic"}
+{"sentence": "i rate doom 3: worlds on fire a 1 of 6", "slot label": [["object_name", 2, 6], ["rating_value", 8, 8], ["best_rating", 10, 10]], "intent label": "RateBook"}
+{"sentence": "what time is phil ochs: there but for fortune playing at the movie house", "slot label": [["movie_name", 3, 8], ["object_location_type", 12, 13]], "intent label": "SearchScreeningEvent"}
+{"sentence": "add andreas johnson to my rock save the queen playlist", "slot label": [["artist", 1, 2], ["playlist_owner", 4, 4], ["playlist", 5, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "i d like to watch take this waltz", "slot label": [["movie_name", 5, 7]], "intent label": "SearchScreeningEvent"}
+{"sentence": "what are the mann theatres showtimes for secret sunshine", "slot label": [["location_name", 3, 4], ["movie_name", 7, 8]], "intent label": "SearchScreeningEvent"}
+{"sentence": "will there be snowfall in kitlope heritage conservancy", "slot label": [["condition_description", 3, 3], ["geographic_poi", 5, 7]], "intent label": "GetWeather"}
+{"sentence": "play geddy lee music on spotify sort by top", "slot label": [["artist", 1, 2], ["service", 5, 5], ["sort", 8, 8]], "intent label": "PlayMusic"}
+{"sentence": "rate in the eyes of mr  fury zero of 6", "slot label": [["object_name", 1, 6], ["rating_value", 7, 7], ["best_rating", 9, 9]], "intent label": "RateBook"}
+{"sentence": "look up the tv series operace silver a", "slot label": [["object_type", 3, 4], ["object_name", 5, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "i m looking for the tv series  called unborn", "slot label": [["object_type", 5, 6], ["object_name", 8, 8]], "intent label": "SearchCreativeWork"}
+{"sentence": "play the song memories are my only witness", "slot label": [["object_type", 2, 2], ["object_name", 3, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "i give the phishing manual four stars out of 6", "slot label": [["object_name", 2, 4], ["rating_value", 5, 5], ["rating_unit", 6, 6], ["best_rating", 9, 9]], "intent label": "RateBook"}
+{"sentence": "play clásicos del hip hop español", "slot label": [["playlist", 1, 5]], "intent label": "PlayMusic"}
+{"sentence": "add rupee to my ultra metal playlist", "slot label": [["artist", 1, 1], ["playlist_owner", 3, 3], ["playlist", 4, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "add shi xin hui to my piano chill playlist", "slot label": [["artist", 1, 3], ["playlist_owner", 5, 5], ["playlist", 6, 7]], "intent label": "AddToPlaylist"}
+{"sentence": "what time is the clutching hand playing at amco entertainment", "slot label": [["movie_name", 3, 5], ["location_name", 8, 9]], "intent label": "SearchScreeningEvent"}
+{"sentence": "add circus to my post garage wave revival list", "slot label": [["entity_name", 1, 1], ["playlist_owner", 3, 3], ["playlist", 4, 7]], "intent label": "AddToPlaylist"}
+{"sentence": "the chronicle charlie peace earns 4 stars from me", "slot label": [["object_part_of_series_type", 1, 1], ["object_name", 2, 3], ["rating_value", 5, 5], ["rating_unit", 6, 6]], "intent label": "RateBook"}
+{"sentence": "find conker: live and reloaded", "slot label": [["object_name", 1, 4]], "intent label": "SearchCreativeWork"}
+{"sentence": "show me the nearest movie house showing the luckiest girl in the world", "slot label": [["spatial_relation", 3, 3], ["object_location_type", 4, 5], ["movie_name", 7, 12]], "intent label": "SearchScreeningEvent"}
+{"sentence": "play track music from peter finestone on netflix sort by newest", "slot label": [["music_item", 1, 1], ["artist", 4, 5], ["service", 7, 7], ["sort", 10, 10]], "intent label": "PlayMusic"}
+{"sentence": "play the song shine a light", "slot label": [["music_item", 2, 2], ["track", 3, 5]], "intent label": "PlayMusic"}
+{"sentence": "book a popular restaurant of thai cuisine", "slot label": [["sort", 2, 2], ["restaurant_type", 3, 3], ["cuisine", 5, 5]], "intent label": "BookRestaurant"}
+{"sentence": "which animated movies are playing in the neighbourhood and when", "slot label": [["movie_type", 1, 2], ["spatial_relation", 5, 7]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i want to listen to the song only the greatest", "slot label": [["object_type", 6, 6], ["object_name", 7, 9]], "intent label": "SearchCreativeWork"}
+{"sentence": "i d like to eat at the best restaurant", "slot label": [["sort", 7, 7], ["restaurant_type", 8, 8]], "intent label": "BookRestaurant"}
+{"sentence": "is it going to be chilly in western sahara in 13 hours", "slot label": [["condition_temperature", 5, 5], ["country", 7, 8], ["timeRange", 10, 11]], "intent label": "GetWeather"}
+{"sentence": "i want to book a restaurant for four around zapata", "slot label": [["restaurant_type", 5, 5], ["party_size_number", 7, 7], ["spatial_relation", 8, 8], ["city", 9, 9]], "intent label": "BookRestaurant"}
+{"sentence": "rate if tomorrow comes 2 of 6 stars", "slot label": [["object_name", 1, 3], ["rating_value", 4, 4], ["best_rating", 6, 6], ["rating_unit", 7, 7]], "intent label": "RateBook"}
+{"sentence": "the book history by contract is rated five stars in my opinion", "slot label": [["object_type", 1, 1], ["object_name", 2, 4], ["rating_value", 7, 7], ["rating_unit", 8, 8]], "intent label": "RateBook"}
+{"sentence": "i want to book a bar in bonaparte palau", "slot label": [["restaurant_type", 5, 5], ["city", 7, 7], ["state", 8, 8]], "intent label": "BookRestaurant"}
+{"sentence": "i m looking for dead at 21  the tv series", "slot label": [["object_name", 4, 6], ["object_type", 8, 9]], "intent label": "SearchCreativeWork"}
+{"sentence": "can you make reservations at a tea house that serves fettucine", "slot label": [["restaurant_type", 6, 7], ["served_dish", 10, 10]], "intent label": "BookRestaurant"}
+{"sentence": "put a track by lil mama into my guest list sneaky zebra playlist", "slot label": [["music_item", 2, 2], ["artist", 4, 5], ["playlist_owner", 7, 7], ["playlist", 8, 11]], "intent label": "AddToPlaylist"}
+{"sentence": "put some frank ferrer into my edna st vincent millay playlist", "slot label": [["artist", 2, 3], ["playlist_owner", 5, 5], ["playlist", 6, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "what is the forecast for niger", "slot label": [["country", 5, 5]], "intent label": "GetWeather"}
+{"sentence": "rate this novel a 3", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 4, 4]], "intent label": "RateBook"}
+{"sentence": "add this ruth crawford seeger song to my playlist called the soundtrack 007", "slot label": [["artist", 2, 4], ["music_item", 5, 5], ["playlist_owner", 7, 7], ["playlist", 10, 12]], "intent label": "AddToPlaylist"}
+{"sentence": "is it going to snow next year in wv", "slot label": [["condition_description", 4, 4], ["timeRange", 5, 6], ["state", 8, 8]], "intent label": "GetWeather"}
+{"sentence": "is romulus and the sabines playing at the nearest cinema at ten", "slot label": [["movie_name", 1, 4], ["spatial_relation", 8, 8], ["object_location_type", 9, 9], ["timeRange", 11, 11]], "intent label": "SearchScreeningEvent"}
+{"sentence": "show me the new showings for animated movies in the neighborhood", "slot label": [["movie_type", 6, 7], ["spatial_relation", 8, 10]], "intent label": "SearchScreeningEvent"}
+{"sentence": "play the video game the genesis machine", "slot label": [["object_type", 2, 3], ["object_name", 4, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "i want to go to 88th st-boyd av or close by and book seats for 10", "slot label": [["poi", 5, 7], ["spatial_relation", 9, 9], ["party_size_number", 15, 15]], "intent label": "BookRestaurant"}
+{"sentence": "i need to add to the funk soul disco playlist my favorite artist", "slot label": [["playlist", 6, 8], ["playlist_owner", 10, 10], ["music_item", 12, 12]], "intent label": "AddToPlaylist"}
+{"sentence": "i want to book a cafe for 3 in fargo", "slot label": [["restaurant_type", 5, 5], ["party_size_number", 7, 7], ["city", 9, 9]], "intent label": "BookRestaurant"}
+{"sentence": "where can i watch tv series shopping spree", "slot label": [["object_type", 4, 5], ["object_name", 6, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "play an andy silvester sound track from the thirties on spotify", "slot label": [["artist", 2, 3], ["music_item", 4, 5], ["year", 8, 8], ["service", 10, 10]], "intent label": "PlayMusic"}
+{"sentence": "i d like to eat at a popular brasserie in chile with a party of 5", "slot label": [["sort", 7, 7], ["restaurant_type", 8, 8], ["country", 10, 10], ["party_size_number", 15, 15]], "intent label": "BookRestaurant"}
+{"sentence": "what s the forecast for my current place at five pm", "slot label": [["current_location", 6, 7], ["timeRange", 9, 10]], "intent label": "GetWeather"}
+{"sentence": "give private games 3 stars out of 6", "slot label": [["object_name", 1, 2], ["rating_value", 3, 3], ["rating_unit", 4, 4], ["best_rating", 7, 7]], "intent label": "RateBook"}
+{"sentence": "in 17 minutes  will it be foggy in songimvelo game reserve", "slot label": [["condition_description", 6, 6], ["geographic_poi", 8, 10]], "intent label": "GetWeather"}
+{"sentence": "how hot will it be in wisconsin on august fourth", "slot label": [["condition_temperature", 1, 1], ["state", 6, 6], ["timeRange", 8, 9]], "intent label": "GetWeather"}
+{"sentence": "i d like to put qriii onto songs to sing in the car", "slot label": [["entity_name", 5, 5], ["playlist", 7, 12]], "intent label": "AddToPlaylist"}
+{"sentence": "will it be chilly in oakdale ok", "slot label": [["condition_temperature", 3, 3], ["city", 5, 5], ["state", 6, 6]], "intent label": "GetWeather"}
+{"sentence": "add dwele to marguerite s eurovision 2016 playlist", "slot label": [["artist", 1, 1], ["playlist_owner", 3, 4], ["playlist", 5, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "what s the weather forecast for croatia on jul  25th", "slot label": [["country", 6, 6], ["timeRange", 8, 9]], "intent label": "GetWeather"}
+{"sentence": "find tv series titled a life in the death of joe meek", "slot label": [["object_type", 1, 2], ["object_name", 4, 11]], "intent label": "SearchCreativeWork"}
+{"sentence": "open fadl shaker on spotify and play a melody starting with the newest", "slot label": [["artist", 1, 2], ["service", 4, 4], ["music_item", 8, 8], ["sort", 12, 12]], "intent label": "PlayMusic"}
+{"sentence": "please add jency anthony to my playlist this is mozart", "slot label": [["artist", 2, 3], ["playlist_owner", 5, 5], ["playlist", 7, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "whats the weather in ga", "slot label": [["state", 4, 4]], "intent label": "GetWeather"}
+{"sentence": "i rate the chronicle  son of the tree with four of 6 points", "slot label": [["object_part_of_series_type", 3, 3], ["object_name", 4, 7], ["rating_value", 9, 9], ["best_rating", 11, 11], ["rating_unit", 12, 12]], "intent label": "RateBook"}
+{"sentence": "add git to domingo indie", "slot label": [["entity_name", 1, 1], ["playlist", 3, 4]], "intent label": "AddToPlaylist"}
+{"sentence": "will there be cloud coverage in verdery  myanmar", "slot label": [["condition_description", 3, 3], ["city", 6, 6], ["country", 7, 7]], "intent label": "GetWeather"}
+{"sentence": "rate maps for lost lovers 1 of 6", "slot label": [["object_name", 1, 4], ["rating_value", 5, 5], ["best_rating", 7, 7]], "intent label": "RateBook"}
+{"sentence": "will it snow in granbury", "slot label": [["condition_description", 2, 2], ["city", 4, 4]], "intent label": "GetWeather"}
+{"sentence": "play me a cinder block movement", "slot label": [["artist", 3, 4], ["music_item", 5, 5]], "intent label": "PlayMusic"}
+{"sentence": "find the tv series shaun the sheep", "slot label": [["object_type", 2, 3], ["object_name", 4, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "i want to hear the jody williams sound track", "slot label": [["artist", 5, 6], ["music_item", 7, 8]], "intent label": "PlayMusic"}
+{"sentence": "what is the forecast for foggy conditions here in twenty one minutes", "slot label": [["condition_description", 5, 5], ["current_location", 7, 7], ["timeRange", 8, 11]], "intent label": "GetWeather"}
+{"sentence": "book a table at grecian coffee house for 7 on apr  7th  2024", "slot label": [["restaurant_name", 4, 6], ["party_size_number", 8, 8], ["timeRange", 10, 12]], "intent label": "BookRestaurant"}
+{"sentence": "show creative photograph of icewind dale: heart of winter", "slot label": [["object_type", 2, 2], ["object_name", 4, 8]], "intent label": "SearchCreativeWork"}
+{"sentence": "rate the manxman 5 out of 6", "slot label": [["object_name", 1, 2], ["rating_value", 3, 3], ["best_rating", 6, 6]], "intent label": "RateBook"}
+{"sentence": "add this song to my lo que suena new york playlist", "slot label": [["music_item", 2, 2], ["playlist_owner", 4, 4], ["playlist", 5, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "find reproductions: songs of the human league", "slot label": [["object_name", 1, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "play a 2001 sound track on deezer", "slot label": [["year", 2, 2], ["music_item", 3, 4], ["service", 6, 6]], "intent label": "PlayMusic"}
+{"sentence": "weather for ma in the morning", "slot label": [["state", 2, 2], ["timeRange", 5, 5]], "intent label": "GetWeather"}
+{"sentence": "play a ballad by bob johnston", "slot label": [["music_item", 2, 2], ["artist", 4, 5]], "intent label": "PlayMusic"}
+{"sentence": "is there a snowstorm in russia", "slot label": [["condition_description", 3, 3], ["country", 5, 5]], "intent label": "GetWeather"}
+{"sentence": "will it be nice on aug  the nineteenth in beda bulgaria", "slot label": [["timeRange", 5, 7], ["city", 9, 9], ["country", 10, 10]], "intent label": "GetWeather"}
+{"sentence": "i d like for you to put this artist to my evening commute playlist", "slot label": [["music_item", 8, 8], ["playlist_owner", 10, 10], ["playlist", 11, 12]], "intent label": "AddToPlaylist"}
+{"sentence": "play the caps lock trailer", "slot label": [["object_name", 2, 3], ["object_type", 4, 4]], "intent label": "SearchCreativeWork"}
+{"sentence": "give me the movie schedules for warren theatres", "slot label": [["object_type", 3, 4], ["location_name", 6, 7]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i need current movie schedules", "slot label": [["object_type", 3, 4]], "intent label": "SearchScreeningEvent"}
+{"sentence": "add even serpents shine to dorothea s indie hipster playlist", "slot label": [["entity_name", 1, 3], ["playlist_owner", 5, 6], ["playlist", 7, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "play ep by arjen anthony lucassen", "slot label": [["music_item", 1, 1], ["artist", 3, 5]], "intent label": "PlayMusic"}
+{"sentence": "give 4 points to this novel", "slot label": [["rating_value", 1, 1], ["rating_unit", 2, 2], ["object_select", 4, 4], ["object_type", 5, 5]], "intent label": "RateBook"}
+{"sentence": "add star light  star bright to my jazz classics playlist", "slot label": [["entity_name", 1, 4], ["playlist_owner", 6, 6], ["playlist", 7, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "put nothing remains the same on my summer music playlist", "slot label": [["entity_name", 1, 4], ["playlist_owner", 6, 6], ["playlist", 7, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "weather for the night time in new mexico", "slot label": [["timeRange", 3, 3], ["state", 6, 7]], "intent label": "GetWeather"}
+{"sentence": "add pangaea to my gold edition playlist", "slot label": [["entity_name", 1, 1], ["playlist_owner", 3, 3], ["playlist", 4, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "find me a movie with the name oshin", "slot label": [["object_type", 3, 3], ["object_name", 7, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "add ian stuart donaldson to canadian country", "slot label": [["artist", 1, 3], ["playlist", 5, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "show me movie time for i am sorry  at my movie house", "slot label": [["movie_name", 5, 7], ["object_location_type", 10, 11]], "intent label": "SearchScreeningEvent"}
+{"sentence": "please add ruud jolie to my playlist guest list polygon", "slot label": [["artist", 2, 3], ["playlist_owner", 5, 5], ["playlist", 7, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "add patti page album to i love my neo soul", "slot label": [["artist", 1, 2], ["music_item", 3, 3], ["playlist", 5, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "add an album by twink to my classic country playlist", "slot label": [["music_item", 2, 2], ["artist", 4, 4], ["playlist_owner", 6, 6], ["playlist", 7, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "will it be a snowy day in dalcour", "slot label": [["condition_description", 4, 4], ["timeRange", 5, 5], ["city", 7, 7]], "intent label": "GetWeather"}
+{"sentence": "rate this essay a two out of 6", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 4, 4], ["best_rating", 7, 7]], "intent label": "RateBook"}
+{"sentence": "find the movie schedules for animated movies nearby at 09:44 am", "slot label": [["object_type", 2, 3], ["movie_type", 5, 6], ["spatial_relation", 7, 7], ["timeRange", 9, 10]], "intent label": "SearchScreeningEvent"}
+{"sentence": "add armand van helden to my black sabbath the ozzy years playlist", "slot label": [["artist", 1, 3], ["playlist_owner", 5, 5], ["playlist", 6, 10]], "intent label": "AddToPlaylist"}
+{"sentence": "give this chronicle a 4", "slot label": [["object_select", 1, 1], ["object_part_of_series_type", 2, 2], ["rating_value", 4, 4]], "intent label": "RateBook"}
+{"sentence": "i m looking for a churrascaria place with wifi that can serve a party of five", "slot label": [["restaurant_type", 5, 5], ["facility", 8, 8], ["party_size_number", 15, 15]], "intent label": "BookRestaurant"}
+{"sentence": "what time is goodbye mothers playing", "slot label": [["movie_name", 3, 4]], "intent label": "SearchScreeningEvent"}
+{"sentence": "book the city tavern in holiday ks", "slot label": [["restaurant_name", 2, 3], ["city", 5, 5], ["state", 6, 6]], "intent label": "BookRestaurant"}
+{"sentence": "what movies are playing dickinson theatres", "slot label": [["movie_type", 1, 1], ["location_name", 4, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "rate the key word and other mysteries 4 of 6", "slot label": [["object_name", 1, 6], ["rating_value", 7, 7], ["best_rating", 9, 9]], "intent label": "RateBook"}
+{"sentence": "i d like to watch may blossom", "slot label": [["movie_name", 5, 6]], "intent label": "SearchScreeningEvent"}
+{"sentence": "play some music on slacker", "slot label": [["service", 4, 4]], "intent label": "PlayMusic"}
+{"sentence": "i want to rate the ingenuity gap 3 out of 6", "slot label": [["object_name", 4, 6], ["rating_value", 7, 7], ["best_rating", 10, 10]], "intent label": "RateBook"}
+{"sentence": "add song to my wild country playlist", "slot label": [["music_item", 1, 1], ["playlist_owner", 3, 3], ["playlist", 4, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "what is the weather forecast for close-by burkina", "slot label": [["spatial_relation", 6, 6], ["country", 7, 7]], "intent label": "GetWeather"}
+{"sentence": "i want to watch supernatural: the unseen powers of animals", "slot label": [["object_name", 4, 9]], "intent label": "SearchCreativeWork"}
+{"sentence": "listen to dragon ball: music collection", "slot label": [["object_name", 2, 5]], "intent label": "SearchCreativeWork"}
+{"sentence": "add troy van leeuwen to my nu metal list", "slot label": [["artist", 1, 3], ["playlist_owner", 5, 5], ["playlist", 6, 7]], "intent label": "AddToPlaylist"}
+{"sentence": "add born free to fresh r&b", "slot label": [["entity_name", 1, 2], ["playlist", 4, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "book at table at forest av restaurant close-by for 2 1 second from now", "slot label": [["poi", 4, 5], ["restaurant_type", 6, 6], ["spatial_relation", 7, 7], ["party_size_number", 9, 9], ["timeRange", 10, 13]], "intent label": "BookRestaurant"}
+{"sentence": "can you get me the trailer of the multiversity", "slot label": [["object_type", 5, 5], ["object_name", 7, 8]], "intent label": "SearchCreativeWork"}
+{"sentence": "are there movies at malco theatres", "slot label": [["movie_type", 2, 2], ["location_name", 4, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "rate the current chronicle series 3 out of 6 points", "slot label": [["object_select", 2, 2], ["object_part_of_series_type", 3, 4], ["rating_value", 5, 5], ["best_rating", 8, 8], ["rating_unit", 9, 9]], "intent label": "RateBook"}
+{"sentence": "can i get the movie times", "slot label": [["object_type", 4, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i want to add hind etin to my la mejor música dance 2017 playlist", "slot label": [["entity_name", 4, 5], ["playlist_owner", 7, 7], ["playlist", 8, 12]], "intent label": "AddToPlaylist"}
+{"sentence": "play some latin on zvooq", "slot label": [["genre", 2, 2], ["service", 4, 4]], "intent label": "PlayMusic"}
+{"sentence": "what is the freezing forecast for british virgin islands", "slot label": [["condition_temperature", 3, 3], ["country", 6, 8]], "intent label": "GetWeather"}
+{"sentence": "pull up sweeney todd - il diabolico barbiere di fleet street", "slot label": [["object_name", 2, 10]], "intent label": "SearchCreativeWork"}
+{"sentence": "put four rating on the raging quiet", "slot label": [["rating_value", 1, 1], ["object_name", 4, 6]], "intent label": "RateBook"}
+{"sentence": "show me the tv show limit of love: umizaru", "slot label": [["object_type", 3, 4], ["object_name", 5, 8]], "intent label": "SearchCreativeWork"}
+{"sentence": "which movies are playing at the closest cinema", "slot label": [["movie_type", 1, 1], ["spatial_relation", 6, 6], ["object_location_type", 7, 7]], "intent label": "SearchScreeningEvent"}
+{"sentence": "add this album by karl davydov to reyna s this is luis fonsi playlist", "slot label": [["music_item", 2, 2], ["artist", 4, 5], ["playlist_owner", 7, 8], ["playlist", 9, 12]], "intent label": "AddToPlaylist"}
+{"sentence": "where can i see the television show falling away from me", "slot label": [["object_type", 5, 6], ["object_name", 7, 10]], "intent label": "SearchCreativeWork"}
+{"sentence": "book me a table for 5 at a best rated restaurant in italy", "slot label": [["party_size_number", 5, 5], ["sort", 8, 9], ["restaurant_type", 10, 10], ["country", 12, 12]], "intent label": "BookRestaurant"}
+{"sentence": "will there be a snowstorm in taberville", "slot label": [["condition_description", 4, 4], ["city", 6, 6]], "intent label": "GetWeather"}
+{"sentence": "add this song to this is no te va gustar playlist", "slot label": [["music_item", 2, 2], ["playlist", 4, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "can i get the movies  showtimes for the closest movie house", "slot label": [["movie_type", 4, 4], ["spatial_relation", 8, 8], ["object_location_type", 9, 10]], "intent label": "SearchScreeningEvent"}
+{"sentence": "do you have something like impossible is nothing by abderrahmane abdelli", "slot label": [["track", 5, 7], ["artist", 9, 10]], "intent label": "PlayMusic"}
+{"sentence": "what is the weather forecast for cistern", "slot label": [["city", 6, 6]], "intent label": "GetWeather"}
+{"sentence": "please make reservations in yeager for seven am at a highly rated indian brasserie", "slot label": [["city", 4, 4], ["timeRange", 6, 7], ["sort", 10, 11], ["cuisine", 12, 12], ["restaurant_type", 13, 13]], "intent label": "BookRestaurant"}
+{"sentence": "play me a nineties sound track", "slot label": [["year", 3, 3], ["music_item", 4, 5]], "intent label": "PlayMusic"}
+{"sentence": "where can i find thor meets captain america", "slot label": [["object_name", 4, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "i need to have pat alger s album placed onto the spotlight spain 2016 playlist", "slot label": [["artist", 4, 5], ["music_item", 7, 7], ["playlist", 11, 13]], "intent label": "AddToPlaylist"}
+{"sentence": "can i get the movie times for fox theatres", "slot label": [["object_type", 4, 5], ["location_name", 7, 8]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i d like to watch wish you were dead", "slot label": [["movie_name", 5, 8]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i d like to watch apocalypse 2024", "slot label": [["movie_name", 5, 6]], "intent label": "SearchScreeningEvent"}
+{"sentence": "show creativity of song a discord electric", "slot label": [["object_type", 3, 3], ["object_name", 4, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "is love and other troubles playing", "slot label": [["movie_name", 1, 4]], "intent label": "SearchScreeningEvent"}
+{"sentence": "show me the current movie times", "slot label": [["object_type", 4, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "rate the lie tree five", "slot label": [["object_name", 1, 3], ["rating_value", 4, 4]], "intent label": "RateBook"}
+{"sentence": "i want to add another album to the wine & dine playlist", "slot label": [["music_item", 5, 5], ["playlist", 8, 10]], "intent label": "AddToPlaylist"}
+{"sentence": "add another tune to my pumping iron playlist", "slot label": [["music_item", 2, 2], ["playlist_owner", 4, 4], ["playlist", 5, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "play a track by mila islam from deezer", "slot label": [["music_item", 2, 2], ["artist", 4, 5], ["service", 7, 7]], "intent label": "PlayMusic"}
+{"sentence": "is it rainy season in manitou springs", "slot label": [["condition_description", 2, 2], ["city", 5, 6]], "intent label": "GetWeather"}
+{"sentence": "give 2 stars to the doom brigade", "slot label": [["rating_value", 1, 1], ["rating_unit", 2, 2], ["object_name", 4, 6]], "intent label": "RateBook"}
+{"sentence": "add this tune to my dinnertime acoustics list", "slot label": [["music_item", 2, 2], ["playlist_owner", 4, 4], ["playlist", 5, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "what are the current movie schedules", "slot label": [["object_type", 4, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "what is the showtime for arsho", "slot label": [["movie_name", 5, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "list movie times at harkins theatres", "slot label": [["object_type", 1, 2], ["location_name", 4, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "what movies are showing in the neighborhood", "slot label": [["movie_type", 1, 1], ["spatial_relation", 4, 6]], "intent label": "SearchScreeningEvent"}
+{"sentence": "play my playlist tgif on itunes", "slot label": [["playlist", 3, 3], ["service", 5, 5]], "intent label": "PlayMusic"}
+{"sentence": "what will the weather be like on january 2nd  2025 in ga", "slot label": [["timeRange", 7, 9], ["state", 11, 11]], "intent label": "GetWeather"}
+{"sentence": "what animated movies are playing in the neighbourhood and when", "slot label": [["movie_type", 1, 2], ["spatial_relation", 5, 7]], "intent label": "SearchScreeningEvent"}
+{"sentence": "book a spot at savoy hotel and grill that is neighboring wisconsin", "slot label": [["restaurant_name", 4, 7], ["spatial_relation", 10, 10], ["state", 11, 11]], "intent label": "BookRestaurant"}
+{"sentence": "can you find me the back when i knew it all album", "slot label": [["object_name", 5, 10], ["object_type", 11, 11]], "intent label": "SearchCreativeWork"}
+{"sentence": "add george thorogood to el mejor rock en español", "slot label": [["artist", 1, 2], ["playlist", 4, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "play the album how insensitive", "slot label": [["music_item", 2, 2], ["album", 3, 4]], "intent label": "PlayMusic"}
+{"sentence": "i m looking for the pokémon: the movie 2000 tv show", "slot label": [["object_name", 5, 8], ["object_type", 9, 10]], "intent label": "SearchCreativeWork"}
+{"sentence": "place this tune onto my dinner for 2 playlist", "slot label": [["music_item", 2, 2], ["playlist_owner", 4, 4], ["playlist", 5, 7]], "intent label": "AddToPlaylist"}
+{"sentence": "where can i see the trailer for love on the beat", "slot label": [["object_type", 5, 5], ["object_name", 7, 10]], "intent label": "SearchCreativeWork"}
+{"sentence": "list movie times at megaplex theatres", "slot label": [["object_type", 1, 2], ["location_name", 4, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "will it be chillier at 06:05:48 in wagener réunion", "slot label": [["condition_temperature", 3, 3], ["timeRange", 5, 5], ["city", 7, 7], ["country", 8, 8]], "intent label": "GetWeather"}
+{"sentence": "what is the weather in south bradenton", "slot label": [["city", 5, 6]], "intent label": "GetWeather"}
+{"sentence": "get jump down painting", "slot label": [["object_name", 1, 2], ["object_type", 3, 3]], "intent label": "SearchCreativeWork"}
+{"sentence": "please book a room in spaghetti warehouse for catalina  delores and brandie mendoza at 12 am", "slot label": [["restaurant_name", 5, 6], ["party_size_description", 8, 12], ["timeRange", 14, 15]], "intent label": "BookRestaurant"}
+{"sentence": "what is the nh forecast for mexican hat", "slot label": [["state", 3, 3], ["city", 6, 7]], "intent label": "GetWeather"}
+{"sentence": "i need to book a top-rated steakhouse this autumn  for 1 around azerbaijan", "slot label": [["sort", 5, 5], ["restaurant_type", 6, 6], ["timeRange", 7, 8], ["party_size_number", 10, 10], ["spatial_relation", 11, 11], ["country", 12, 12]], "intent label": "BookRestaurant"}
+{"sentence": "will it be chillier at my current location in one minute", "slot label": [["condition_temperature", 3, 3], ["current_location", 6, 7], ["timeRange", 8, 10]], "intent label": "GetWeather"}
+{"sentence": "show me heavenly sword", "slot label": [["object_name", 2, 3]], "intent label": "SearchCreativeWork"}
+{"sentence": "what is the weather forecast for close-by gu 3 years from now", "slot label": [["spatial_relation", 6, 6], ["state", 7, 7], ["timeRange", 8, 11]], "intent label": "GetWeather"}
+{"sentence": "will it be freezing on 4/20/2038 in american beach nc", "slot label": [["condition_temperature", 3, 3], ["timeRange", 5, 5], ["city", 7, 8], ["state", 9, 9]], "intent label": "GetWeather"}
+{"sentence": "i need the wather for next week in the philippines", "slot label": [["timeRange", 5, 6], ["country", 9, 9]], "intent label": "GetWeather"}
+{"sentence": "add tune to my metal crash course playlist", "slot label": [["music_item", 1, 1], ["playlist_owner", 3, 3], ["playlist", 4, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "i would like to book the best food court with persian food within the same area as ok for my ex husband and i", "slot label": [["sort", 6, 6], ["restaurant_type", 7, 8], ["cuisine", 10, 10], ["spatial_relation", 12, 15], ["state", 17, 17], ["party_size_description", 19, 23]], "intent label": "BookRestaurant"}
+{"sentence": "i d like to see the picture the principle of hope", "slot label": [["object_type", 6, 6], ["object_name", 7, 10]], "intent label": "SearchCreativeWork"}
+{"sentence": "rate this series 2 out of 6", "slot label": [["object_select", 1, 1], ["object_part_of_series_type", 2, 2], ["rating_value", 3, 3], ["best_rating", 6, 6]], "intent label": "RateBook"}
+{"sentence": "find a man needs a maid", "slot label": [["object_name", 1, 5]], "intent label": "SearchCreativeWork"}
+{"sentence": "book a restaurant close by my daughters s work location with burrito three years from now", "slot label": [["restaurant_type", 2, 2], ["spatial_relation", 3, 4], ["poi", 5, 9], ["served_dish", 11, 11], ["timeRange", 12, 15]], "intent label": "BookRestaurant"}
+{"sentence": "add this tune to the refugee playlist", "slot label": [["music_item", 2, 2], ["playlist", 4, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "find time for movie times now", "slot label": [["object_type", 3, 4], ["timeRange", 5, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i would like to book a highly rated brasserie with souvlaki neighboring la next week", "slot label": [["sort", 6, 7], ["restaurant_type", 8, 8], ["cuisine", 10, 10], ["spatial_relation", 11, 11], ["state", 12, 12], ["timeRange", 13, 14]], "intent label": "BookRestaurant"}
+{"sentence": "find the panic in needle park", "slot label": [["movie_name", 1, 5]], "intent label": "SearchScreeningEvent"}
+{"sentence": "is it freezing on jun  the 21st in apshawa south africa", "slot label": [["condition_temperature", 2, 2], ["timeRange", 4, 6], ["city", 8, 8], ["country", 9, 10]], "intent label": "GetWeather"}
+{"sentence": "i need to take three people to eat", "slot label": [["party_size_number", 4, 4]], "intent label": "BookRestaurant"}
+{"sentence": "play a 2006 chant", "slot label": [["year", 2, 2], ["music_item", 3, 3]], "intent label": "PlayMusic"}
+{"sentence": "show me the schedule of the loves of letty in cinema closest", "slot label": [["object_type", 3, 3], ["movie_name", 5, 8], ["object_location_type", 10, 10], ["spatial_relation", 11, 11]], "intent label": "SearchScreeningEvent"}
+{"sentence": "play the top 20 ep from the fifties by john bundrick", "slot label": [["sort", 2, 3], ["music_item", 4, 4], ["year", 7, 7], ["artist", 9, 10]], "intent label": "PlayMusic"}
+{"sentence": "show creativity of photograph of my wonderful day", "slot label": [["object_type", 3, 3], ["object_name", 5, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "book a table in the united states for 10 at the berghoff", "slot label": [["country", 5, 6], ["party_size_number", 8, 8], ["restaurant_name", 10, 11]], "intent label": "BookRestaurant"}
+{"sentence": "i d like to book a brasserie in virginia city  ga", "slot label": [["restaurant_type", 6, 6], ["city", 8, 9], ["state", 10, 10]], "intent label": "BookRestaurant"}
+{"sentence": "will it be temperate in the same area in vi", "slot label": [["condition_temperature", 3, 3], ["spatial_relation", 4, 7], ["state", 9, 9]], "intent label": "GetWeather"}
+{"sentence": "rate the current novel four out of 6 points", "slot label": [["object_select", 2, 2], ["object_type", 3, 3], ["rating_value", 4, 4], ["best_rating", 7, 7], ["rating_unit", 8, 8]], "intent label": "RateBook"}
+{"sentence": "is it going to get chillier near hocking state forest", "slot label": [["condition_temperature", 5, 5], ["spatial_relation", 6, 6], ["geographic_poi", 7, 9]], "intent label": "GetWeather"}
+{"sentence": "for the current saga i rate 2 of 6 stars", "slot label": [["object_select", 2, 2], ["object_part_of_series_type", 3, 3], ["rating_value", 6, 6], ["best_rating", 8, 8], ["rating_unit", 9, 9]], "intent label": "RateBook"}
+{"sentence": "i want to play the video game espn major league soccer", "slot label": [["object_type", 5, 6], ["object_name", 7, 10]], "intent label": "SearchCreativeWork"}
+{"sentence": "rate the current book a three", "slot label": [["object_select", 2, 2], ["object_type", 3, 3], ["rating_value", 5, 5]], "intent label": "RateBook"}
+{"sentence": "rate this novel 0 of 6 stars", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 3, 3], ["best_rating", 5, 5], ["rating_unit", 6, 6]], "intent label": "RateBook"}
+{"sentence": "is it going to be chillier at 10 pm in texas", "slot label": [["condition_temperature", 5, 5], ["timeRange", 7, 8], ["state", 10, 10]], "intent label": "GetWeather"}
+{"sentence": "what s the weather in timbo", "slot label": [["city", 5, 5]], "intent label": "GetWeather"}
+{"sentence": "add the blurred crusade to crate diggers anonymous", "slot label": [["entity_name", 1, 3], ["playlist", 5, 7]], "intent label": "AddToPlaylist"}
+{"sentence": "tell me the weather forecast for sugarloaf provincial park ten weeks from now", "slot label": [["geographic_poi", 6, 8], ["timeRange", 9, 12]], "intent label": "GetWeather"}
+{"sentence": "add a gackt camui track to the white noise playlist", "slot label": [["artist", 2, 3], ["music_item", 4, 4], ["playlist", 7, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "rate canto for a gypsy two of 6 stars", "slot label": [["object_name", 1, 4], ["rating_value", 5, 5], ["best_rating", 7, 7], ["rating_unit", 8, 8]], "intent label": "RateBook"}
+{"sentence": "i m looking for circus world", "slot label": [["object_name", 4, 5]], "intent label": "SearchCreativeWork"}
+{"sentence": "this textbook gets a two", "slot label": [["object_type", 1, 1], ["rating_value", 4, 4]], "intent label": "RateBook"}
+{"sentence": "show me the movie times", "slot label": [["object_type", 3, 4]], "intent label": "SearchScreeningEvent"}
+{"sentence": "add song to my underground hits", "slot label": [["music_item", 1, 1], ["playlist_owner", 3, 3], ["playlist", 4, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "play the album journeyman", "slot label": [["object_type", 2, 2], ["object_name", 3, 3]], "intent label": "SearchCreativeWork"}
+{"sentence": "find the family jams saga", "slot label": [["object_name", 1, 3], ["object_type", 4, 4]], "intent label": "SearchCreativeWork"}
+{"sentence": "play rob mills album the golden archipelago", "slot label": [["artist", 1, 2], ["music_item", 3, 3], ["album", 4, 6]], "intent label": "PlayMusic"}
+{"sentence": "book a spot at a restaurant within walking distance of palau", "slot label": [["restaurant_type", 5, 5], ["spatial_relation", 6, 8], ["state", 10, 10]], "intent label": "BookRestaurant"}
+{"sentence": "find me the balance and timing book", "slot label": [["object_name", 3, 5], ["object_type", 6, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "find movie schedules for bow tie cinemas", "slot label": [["object_type", 1, 2], ["location_name", 4, 6]], "intent label": "SearchScreeningEvent"}
+{"sentence": "add get happy to cherry s las canciones más lindas del mundo", "slot label": [["entity_name", 1, 2], ["playlist_owner", 4, 5], ["playlist", 6, 11]], "intent label": "AddToPlaylist"}
+{"sentence": "rate this textbook a 1", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 4, 4]], "intent label": "RateBook"}
+{"sentence": "shw the picture twin husbands", "slot label": [["object_type", 2, 2], ["object_name", 3, 4]], "intent label": "SearchCreativeWork"}
+{"sentence": "rate a taste of blackberries  a three", "slot label": [["object_name", 1, 4], ["rating_value", 6, 6]], "intent label": "RateBook"}
+{"sentence": "play the 1991 soundtrack from ian mcdonald", "slot label": [["year", 2, 2], ["music_item", 3, 3], ["artist", 5, 6]], "intent label": "PlayMusic"}
+{"sentence": "find an album called just call me stupid", "slot label": [["object_type", 2, 2], ["object_name", 4, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "play the insoc ep", "slot label": [["album", 1, 3]], "intent label": "PlayMusic"}
+{"sentence": "i want to hear major harris s songs from the fifties", "slot label": [["artist", 4, 5], ["year", 10, 10]], "intent label": "PlayMusic"}
+{"sentence": "book a restaurant in donnelly", "slot label": [["restaurant_type", 2, 2], ["city", 4, 4]], "intent label": "BookRestaurant"}
+{"sentence": "rate the saint in trouble 1 of 6", "slot label": [["object_name", 1, 4], ["rating_value", 5, 5], ["best_rating", 7, 7]], "intent label": "RateBook"}
+{"sentence": "play punk rock music", "slot label": [["genre", 1, 2]], "intent label": "PlayMusic"}
+{"sentence": "look for a photograph of i wanna sex you up", "slot label": [["object_type", 3, 3], ["object_name", 5, 9]], "intent label": "SearchCreativeWork"}
+{"sentence": "what is the humidity like in faraway on ak", "slot label": [["condition_description", 3, 3], ["spatial_relation", 6, 6], ["state", 8, 8]], "intent label": "GetWeather"}
+{"sentence": "i d like to eat at an internet restaurant with a party of four", "slot label": [["facility", 7, 7], ["restaurant_type", 8, 8], ["party_size_number", 13, 13]], "intent label": "BookRestaurant"}
+{"sentence": "when is just before nightfall playing", "slot label": [["movie_name", 2, 4]], "intent label": "SearchScreeningEvent"}
+{"sentence": "play moondog s chupacabra", "slot label": [["artist", 1, 1], ["album", 3, 3]], "intent label": "PlayMusic"}
+{"sentence": "add album to pop rising", "slot label": [["music_item", 1, 1], ["playlist", 3, 4]], "intent label": "AddToPlaylist"}
+{"sentence": "rate this book three points", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 3, 3], ["rating_unit", 4, 4]], "intent label": "RateBook"}
+{"sentence": "i am giving this current book album 0 out of 6 stars", "slot label": [["object_select", 4, 4], ["object_type", 5, 6], ["rating_value", 7, 7], ["best_rating", 10, 10], ["rating_unit", 11, 11]], "intent label": "RateBook"}
+{"sentence": "play artist vlada divljan from something he did that is good", "slot label": [["artist", 2, 3], ["sort", 10, 10]], "intent label": "PlayMusic"}
+{"sentence": "what will the humidity be in varnado georgia at one am", "slot label": [["condition_description", 3, 3], ["city", 6, 6], ["state", 7, 7], ["timeRange", 9, 10]], "intent label": "GetWeather"}
+{"sentence": "add no prejudice to 90s indie", "slot label": [["entity_name", 1, 2], ["playlist", 4, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "what are the movies movie times nearby", "slot label": [["movie_type", 3, 3], ["object_type", 4, 5], ["spatial_relation", 6, 6]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i want to hear some songs from the twenties", "slot label": [["year", 8, 8]], "intent label": "PlayMusic"}
+{"sentence": "please make reservations for nine at 3 am", "slot label": [["party_size_number", 4, 4], ["timeRange", 6, 7]], "intent label": "BookRestaurant"}
+{"sentence": "can you pull up queen of the organ", "slot label": [["object_name", 4, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "lets hear some dawood sarkhosh from their the power of your love album from groove shark", "slot label": [["artist", 3, 4], ["album", 7, 11], ["music_item", 12, 12], ["service", 14, 15]], "intent label": "PlayMusic"}
+{"sentence": "will it get overcast in la dolores", "slot label": [["condition_description", 3, 3], ["city", 5, 6]], "intent label": "GetWeather"}
+{"sentence": "book a spot for kelli  jean and i at a pub at elevenses", "slot label": [["party_size_description", 4, 7], ["restaurant_type", 10, 10], ["timeRange", 12, 12]], "intent label": "BookRestaurant"}
+{"sentence": "add this candi staton artist to my dancefloor hits", "slot label": [["artist", 2, 3], ["music_item", 4, 4], ["playlist_owner", 6, 6], ["playlist", 7, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "i want to add a song by jazz brasileiro", "slot label": [["music_item", 5, 5], ["playlist", 7, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "rate wielding a red sword 0 stars", "slot label": [["object_name", 1, 4], ["rating_value", 5, 5], ["rating_unit", 6, 6]], "intent label": "RateBook"}
+{"sentence": "book a taverna that serves bengali for six at five", "slot label": [["restaurant_type", 2, 2], ["cuisine", 5, 5], ["party_size_number", 7, 7], ["timeRange", 9, 9]], "intent label": "BookRestaurant"}
+{"sentence": "play the tv series heart of gold", "slot label": [["object_type", 2, 3], ["object_name", 4, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "show crafty hands saga", "slot label": [["object_name", 1, 2], ["object_type", 3, 3]], "intent label": "SearchCreativeWork"}
+{"sentence": "will it be hotter in wyomissing hills", "slot label": [["condition_temperature", 3, 3], ["city", 5, 6]], "intent label": "GetWeather"}
+{"sentence": "show weather while sunset in the same area in south carolina", "slot label": [["timeRange", 3, 3], ["spatial_relation", 4, 7], ["state", 9, 10]], "intent label": "GetWeather"}
+{"sentence": "table for one somewhere in palco", "slot label": [["party_size_number", 2, 2], ["city", 5, 5]], "intent label": "BookRestaurant"}
+{"sentence": "i would like to add something by kuk harrell to my hip hop 2017 new school playlist", "slot label": [["artist", 7, 8], ["playlist_owner", 10, 10], ["playlist", 11, 15]], "intent label": "AddToPlaylist"}
+{"sentence": "add list of rush instrumentals to this is lady antebellum", "slot label": [["entity_name", 1, 4], ["playlist", 6, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "where can i see a slice of life", "slot label": [["movie_name", 4, 7]], "intent label": "SearchScreeningEvent"}
+{"sentence": "the current textbook gets a 2 rating", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 5, 5]], "intent label": "RateBook"}
+{"sentence": "add wing track to all a cappella", "slot label": [["artist", 1, 1], ["music_item", 2, 2], ["playlist", 4, 6]], "intent label": "AddToPlaylist"}
+{"sentence": "show me dangers of the canadian mounted", "slot label": [["object_name", 2, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "please add this this tune to the playlist this is selena", "slot label": [["music_item", 4, 4], ["playlist", 8, 10]], "intent label": "AddToPlaylist"}
+{"sentence": "what will the weather be in stelvio national park 1 hour and 1 minute from now", "slot label": [["geographic_poi", 6, 8], ["timeRange", 9, 15]], "intent label": "GetWeather"}
+{"sentence": "can you put musiri subramania iyer s song onto the lo-fi love soundtrack", "slot label": [["artist", 3, 5], ["music_item", 7, 7], ["playlist", 10, 11]], "intent label": "AddToPlaylist"}
+{"sentence": "i want to add michelle heaton to this is chopin", "slot label": [["artist", 4, 5], ["playlist", 7, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "show me the movie operetta for the theatre organ", "slot label": [["object_type", 3, 3], ["object_name", 4, 8]], "intent label": "SearchCreativeWork"}
+{"sentence": "where s the nearest movie house playing no trains no planes", "slot label": [["spatial_relation", 3, 3], ["object_location_type", 4, 5], ["movie_name", 7, 10]], "intent label": "SearchScreeningEvent"}
+{"sentence": "put a xiang xiang track onto women of the blues", "slot label": [["artist", 2, 3], ["music_item", 4, 4], ["playlist", 6, 9]], "intent label": "AddToPlaylist"}
+{"sentence": "can you add a track by david wolfenberger to janell s all funked up playlist", "slot label": [["music_item", 4, 4], ["artist", 6, 7], ["playlist_owner", 9, 10], ["playlist", 11, 13]], "intent label": "AddToPlaylist"}
+{"sentence": "play the album vibrations by marion elise raven", "slot label": [["music_item", 2, 2], ["album", 3, 3], ["artist", 5, 7]], "intent label": "PlayMusic"}
+{"sentence": "add fabri fibra to evening acoustic", "slot label": [["artist", 1, 2], ["playlist", 4, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "can you play any chant from the fourties", "slot label": [["music_item", 4, 4], ["year", 7, 7]], "intent label": "PlayMusic"}
+{"sentence": "show the night riders", "slot label": [["object_name", 1, 3]], "intent label": "SearchCreativeWork"}
+{"sentence": "i m looking for a movie called salvage mice", "slot label": [["object_type", 5, 5], ["object_name", 7, 8]], "intent label": "SearchCreativeWork"}
+{"sentence": "find your personal touch", "slot label": [["object_name", 1, 3]], "intent label": "SearchCreativeWork"}
+{"sentence": "add this tune to my weekend playlist", "slot label": [["music_item", 2, 2], ["playlist_owner", 4, 4], ["playlist", 5, 5]], "intent label": "AddToPlaylist"}
+{"sentence": "is it going to storm in black rock alaska", "slot label": [["condition_description", 4, 4], ["city", 6, 7], ["state", 8, 8]], "intent label": "GetWeather"}
+{"sentence": "show the movie schedules at united paramount theatres", "slot label": [["object_type", 2, 3], ["location_name", 5, 7]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i want to read the saga michael clayton", "slot label": [["object_type", 5, 5], ["object_name", 6, 7]], "intent label": "SearchCreativeWork"}
+{"sentence": "book me a table for 3 at tkk fried chicken in sri lanka", "slot label": [["party_size_number", 5, 5], ["restaurant_name", 7, 9], ["country", 11, 12]], "intent label": "BookRestaurant"}
+{"sentence": "rate this book titled the improvisatore five stars", "slot label": [["object_type", 2, 2], ["object_name", 4, 5], ["rating_value", 6, 6], ["rating_unit", 7, 7]], "intent label": "RateBook"}
+{"sentence": "book a restaurant for one person at 7 am", "slot label": [["restaurant_type", 2, 2], ["party_size_number", 4, 4], ["timeRange", 7, 8]], "intent label": "BookRestaurant"}
+{"sentence": "weather for beauregard il", "slot label": [["city", 2, 2], ["state", 3, 3]], "intent label": "GetWeather"}
+{"sentence": "will there be alot of wind on march 13th in lost creek bahrain", "slot label": [["condition_description", 5, 5], ["timeRange", 7, 8], ["city", 10, 11], ["country", 12, 12]], "intent label": "GetWeather"}
+{"sentence": "i d like a reservation at a place in iran for neva  alice and maggie parker", "slot label": [["country", 9, 9], ["party_size_description", 11, 15]], "intent label": "BookRestaurant"}
+{"sentence": "show me movie schedule for animated movie around here at eleven a m", "slot label": [["object_type", 2, 3], ["movie_type", 5, 6], ["spatial_relation", 7, 8], ["timeRange", 10, 12]], "intent label": "SearchScreeningEvent"}
+{"sentence": "i give this book dictionary of the english language a 4 rating", "slot label": [["object_type", 3, 3], ["object_name", 4, 8], ["rating_value", 10, 10]], "intent label": "RateBook"}
+{"sentence": "play some symphonic rock", "slot label": [["genre", 2, 3]], "intent label": "PlayMusic"}
+{"sentence": "add to my playlist all funked up this track", "slot label": [["playlist_owner", 2, 2], ["playlist", 4, 6], ["music_item", 8, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "find a tv series called armageddon summer", "slot label": [["object_type", 2, 3], ["object_name", 5, 6]], "intent label": "SearchCreativeWork"}
+{"sentence": "find politicsnation with al sharpton", "slot label": [["object_name", 1, 4]], "intent label": "SearchCreativeWork"}
+{"sentence": "rate this album 0 points out of 6", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 3, 3], ["rating_unit", 4, 4], ["best_rating", 7, 7]], "intent label": "RateBook"}
+{"sentence": "add leah kauffman to my uncharted 4 nathan drake playlist", "slot label": [["artist", 1, 2], ["playlist_owner", 4, 4], ["playlist", 5, 8]], "intent label": "AddToPlaylist"}
+{"sentence": "rate this album two out of 6", "slot label": [["object_select", 1, 1], ["object_type", 2, 2], ["rating_value", 3, 3], ["best_rating", 6, 6]], "intent label": "RateBook"}
