@@ -59,7 +59,9 @@ def get_label_set(data_path, output_path):
         f.write('\n'.join(label_list))
 
 
-format_PhoATIS_file("./data/PhoATIS/word-level/test", output_path="./data/SF_ATIS/test.json")
-format_PhoATIS_file("./data/PhoATIS/word-level/train", output_path="./data/SF_ATIS/train.json")
-format_PhoATIS_file("./data/PhoATIS/word-level/dev", output_path="./data/SF_ATIS/dev.json")
-# get_label_set('./data/PhoATIS/word-level/slot_label.txt', './data/SF_ATIS/slot_label.txt')
+# format_PhoATIS_file("./data/atis/test", output_path="./data/atis/test.json")
+# format_PhoATIS_file("./data/atis/train", output_path="./data/atis/train.json")
+# format_PhoATIS_file("./data/atis/valid", output_path="./data/atis/dev.json")
+
+get_label_set('./data/atis/slot_label.txt', './data/atis/slot_label.txt')
+get_label_set('./data/snips/slot_label.txt', './data/snips/slot_label.txt')
