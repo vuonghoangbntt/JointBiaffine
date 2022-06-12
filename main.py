@@ -80,6 +80,7 @@ if __name__ == '__main__':
     parser.add_argument('--weight_decay', default=0.01, type=float)
     parser.add_argument('--warmup_steps', default=0, type=int)
     parser.add_argument('--max_grad_norm', default=1, type=int)
+    parser.add_argument("--use_dice_loss", action="store_true")
     parser.add_argument('--do_train', action="store_true")
     parser.add_argument('--do_eval', action="store_true")
 

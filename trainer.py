@@ -9,7 +9,7 @@ from tqdm.notebook import tqdm
 from dataloader import get_useful_ones, get_mask
 import os
 import logging
-
+from loss import DiceLoss
 
 class Trainer(object):
     def __init__(self, args, train_dataset=None, dev_dataset=None, test_dataset=None):
@@ -63,8 +63,10 @@ class Trainer(object):
             num_warmup_steps=self.args.warmup_steps,
             num_training_steps=total_steps
         )
-        loss_func = torch.nn.CrossEntropyLoss(reduction='mean')
-
+        if self.args.use_dice_loss:
+            loss_func = DiceLoss(reduction="mean")
+        else:
+            loss_func = torch.nn.CrossEntropyLoss(reduction='mean')
         for epoch in trange(self.args.num_epochs):
             train_loss = 0
             self.logger.info('\n------------------------------------')
@@ -120,7 +122,10 @@ class Trainer(object):
                                      num_workers=16)
 
         self.model.eval()
-        loss_func = torch.nn.CrossEntropyLoss(reduction='mean')
+        if self.args.use_dice_loss:
+            loss_func = DiceLoss(reduction="mean")
+        else:
+            loss_func = torch.nn.CrossEntropyLoss(reduction='mean')
         eval_loss = 0
         intent_labels, slot_labels, slot_outputs, intent_outputs, seq_lengths = [], [], [], [], []
         for batch in eval_dataloader:
