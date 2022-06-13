@@ -172,7 +172,8 @@ class Trainer(object):
                                                                                                self.save_folder,
                                                                                                do_error_analyze=(
                                                                                                            mode == 'test'),
-                                                                                               samples=dataset.samples)
+                                                                                               samples=dataset.samples,
+                                                                                               intent_maps=self.intent_label_set)
 
         result = {
             '{} loss'.format(mode): eval_loss / len(eval_dataloader),

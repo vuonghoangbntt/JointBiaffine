@@ -1,12 +1,15 @@
 from metrics.sequence_labeling import *
 import os
+import matplotlib.pyplot as plt
 
 
-def batch_computeF1(intent_labels, intent_preds, slot_labels, slot_preds, seq_lengths, label_set, save_path=None, do_error_analyze=False, samples=None):
+def batch_computeF1(intent_labels, intent_preds, slot_labels, slot_preds, seq_lengths, label_set, save_path=None,
+                    do_error_analyze=False, samples=None, intent_maps=None):
     y_true = []
     y_pred = []
     sent_true = 0
     intent_accuracy = np.sum(np.array(intent_labels) == np.array(intent_preds)) / len(intent_labels)
+    intent_count = {}
     with open(os.path.join(save_path, "error_analysis.txt"), 'w') as f:
         for i in range(len(slot_labels)):
             intent_label = intent_labels[i]
@@ -25,7 +28,11 @@ def batch_computeF1(intent_labels, intent_preds, slot_labels, slot_preds, seq_le
             predict_entity = sorted(list(predict_entity), key=lambda x: x[1])
             if intent_label != intent_pred:
                 flag = 0
-            elif len(label_entity) != len(predict_entity):
+                if intent_maps[int(intent_label)] not in intent_count:
+                    intent_count[intent_maps[int(intent_label)]] = 1
+                else:
+                    intent_count[intent_maps[int(intent_label)]] += 1
+            if len(label_entity) != len(predict_entity):
                 flag = 0
             else:
                 for j in range(len(label_entity)):
@@ -34,15 +41,21 @@ def batch_computeF1(intent_labels, intent_preds, slot_labels, slot_preds, seq_le
                             or label_entity[j][2] != predict_entity[j][2]:
                         flag = 0
                         break
-            if flag==0 and do_error_analyze:
+            if flag == 0 and do_error_analyze:
                 f.write(' '.join(samples[i]['sentence']))
-                f.write('\n'+str(intent_label))
-                f.write('\n'+str(label_entity))
-                f.write('\n'+str(intent_pred))
-                f.write('\n'+str(predict_entity))
+                f.write('\n' + str(intent_maps[int(intent_label)]))
+                f.write('\n' + str(label_entity))
+                f.write('\n' + str(intent_maps[int(intent_pred)]))
+                f.write('\n' + str(predict_entity))
                 f.write('\n')
                 f.write('---------------------------------------\n')
             sent_true += flag
+    if do_error_analyze:
+        plot_chart(intent_count, os.path.join(save_path, "intent_analyze.png"))
+        with open(os.path.join(save_path, "slot_analyze.txt"), "w") as f:
+          f.write(classification_report(y_true, y_pred, digits=4))
+        with open(os.path.join(save_path, "intent_analyze.txt"), "w") as f:
+          f.write(str(intent_count))
     return precision_score(y_true, y_pred), recall_score(y_true, y_pred), f1_score(y_true,
                                                                                    y_pred), classification_report(
         y_true, y_pred, digits=4), intent_accuracy, float(sent_true) / len(intent_labels)
@@ -85,3 +98,21 @@ def get_entity(input_tensor, label_set):
                 tmp = (label_set[input_tensor[i][j].item()], i, j)
                 entity.append(tmp)
     return entity
+
+
+def plot_chart(analytics, save_path=None):
+    left = [2*i for i in range(len(analytics))]
+    height = [analytics[key] for key in analytics]
+    tick_label = [key for key in analytics]
+    plt.bar(left, height, tick_label=tick_label, width=1.2, color=['red', 'green'])
+    # naming the x-axis
+    plt.xlabel('Label')
+    # naming the y-axis
+    plt.ylabel('Wrong')
+    # plot title
+    plt.title('Error Analysis')
+
+    if save_path is not None:
+        plt.savefig(save_path)
+    # function to show the plot
+    plt.show()
