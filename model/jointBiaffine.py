@@ -18,12 +18,14 @@ class JointBiaffine(nn.Module):
                               num_layers=args.lstm_layers, bidirectional=True, batch_first=True)
         self.intent_classifier = IntentClassifier(input_dim=args.hidden_dim * args.lstm_layers,
                                                   num_intent_labels=args.num_intent_labels)
-        self.slot_classifier = SlotClassifier(input_dim=args.hidden_dim,
-                                              hidden_dim=args.hidden_dim_ffw, num_slot_labels=args.num_slot_labels)
+        self.slot_classifier = SlotClassifier(input_dim=args.hidden_dim, hidden_dim=args.hidden_dim_ffw,
+                                              num_slot_labels=args.num_slot_labels, use_attention=args.use_attention)
 
     def forward(self, input_ids=None, char_ids=None, first_subword=None, attention_mask=None):
         x = self.word_rep(input_ids=input_ids, attention_mask=attention_mask,
                           first_subword=first_subword,
                           char_ids=char_ids)
         x, (hn, cn) = self.bilstm(x)
-        return self.intent_classifier(hn.permute(1, 0, 2).reshape(x.shape[0], -1)), self.slot_classifier(x)
+        intent_output = self.intent_classifier(hn.permute(1, 0, 2).reshape(x.shape[0], -1))
+        slot_output = self.slot_classifier(x, intent_output, attention_mask)
+        return intent_output, slot_output

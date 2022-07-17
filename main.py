@@ -61,6 +61,7 @@ if __name__ == '__main__':
 
     # model
     parser.add_argument('--use_char', action="store_true")
+    parser.add_argument('--use_attention', action="store_true")
     parser.add_argument('--char_embedding_dim', default=100, type=int)
     parser.add_argument('--char_hidden_dim', default=200, type=int)
     parser.add_argument('--num_layer_bert', default=1, type=int)
@@ -72,6 +73,7 @@ if __name__ == '__main__':
     parser.add_argument('--model_name_or_path', type=str)
     parser.add_argument('--lstm_layers', type=int, default=2)
     parser.add_argument('--intent_weight', type=float, default=0.2)
+    parser.add_argument('--attention_input_dim', type=int, default=300)
 
     # train
     parser.add_argument('--num_epochs', default=30, type=int)
