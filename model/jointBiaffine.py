@@ -19,7 +19,8 @@ class JointBiaffine(nn.Module):
         self.intent_classifier = IntentClassifier(input_dim=args.hidden_dim * args.lstm_layers,
                                                   num_intent_labels=args.num_intent_labels)
         self.slot_classifier = SlotClassifier(input_dim=args.hidden_dim, hidden_dim=args.hidden_dim_ffw,
-                                              num_slot_labels=args.num_slot_labels, use_attention=args.use_attention)
+                                              num_slot_labels=args.num_slot_labels, num_intent_labels=args.num_intent_labels,
+                                              use_attention=args.use_attention)
 
     def forward(self, input_ids=None, char_ids=None, first_subword=None, attention_mask=None):
         x = self.word_rep(input_ids=input_ids, attention_mask=attention_mask,
