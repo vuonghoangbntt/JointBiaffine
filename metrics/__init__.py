@@ -1,6 +1,8 @@
 from metrics.sequence_labeling import *
 import os
 import matplotlib.pyplot as plt
+import seaborn as sn
+from sklearn.metrics import confusion_matrix
 
 
 def batch_computeF1(intent_labels, intent_preds, slot_labels, slot_preds, seq_lengths, label_set, save_path=None,
@@ -52,6 +54,14 @@ def batch_computeF1(intent_labels, intent_preds, slot_labels, slot_preds, seq_le
             sent_true += flag
     if do_error_analyze:
         plot_chart(intent_count, os.path.join(save_path, "intent_analyze.png"))
+
+        intent_confusion_matrix = confusion_matrix(intent_labels, intent_preds)
+        df_cm = pd.DataFrame(array, index=intent_maps,
+                             columns=intent_maps)
+        plt.figure(figsize=(10, 7))
+        sn.heatmap(df_cm, annot=True)
+        plt.savefig("Intent_Confusion.png", dpi=400)
+
         with open(os.path.join(save_path, "slot_analyze.txt"), "w") as f:
           f.write(classification_report(y_true, y_pred, digits=4))
         with open(os.path.join(save_path, "intent_analyze.txt"), "w") as f:
