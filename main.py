@@ -85,6 +85,7 @@ if __name__ == '__main__':
     parser.add_argument("--use_dice_loss", action="store_true")
     parser.add_argument('--do_train', action="store_true")
     parser.add_argument('--do_eval', action="store_true")
+    parser.add_argument('--attention_type', default='soft', type=str)
 
     parser.add_argument('--save_folder', default='results', type=str)
     parser.add_argument('--seed', default=1, type=int)
