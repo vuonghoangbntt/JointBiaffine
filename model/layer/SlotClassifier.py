@@ -12,8 +12,10 @@ class SlotClassifier(nn.Module):
         if use_attention:
             self.attention = Attention(input_dim)
             self.linear_intent_context = nn.Linear(num_intent_labels, input_dim)
-        if self.attention_type == 'hard':
+        if self.attention_type == 'hard' and self.use_attention:
             self.linear_out = nn.Linear(input_dim*2, input_dim)
+        elif self.attention_type == 'hard':
+            self.linear_out = nn.Linear(input_dim*3, input_dim)
         self.dropout = nn.Dropout(dropout_rate)
         self.feedStart = FeedforwardLayer(d_in=input_dim, d_hid=hidden_dim)
         self.feedEnd = FeedforwardLayer(d_in=input_dim, d_hid=hidden_dim)
