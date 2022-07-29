@@ -31,6 +31,10 @@ class SlotClassifier(nn.Module):
             intent_context = intent_context.expand(-1, x.size()[1], -1)
             x = torch.cat((x, intent_context), dim=2)
             x = self.linear_out(x)
+        elif not self.use_attention and self.attention_type=='hard':
+            intent_context = intent_context.expand(-1, x.size()[1], -1)
+            x = torch.cat((x, intent_context), dim=2)
+            x = self.linear_out(x)
         start = self.feedStart(x)
         end = self.feedEnd(x)
         score = self.biaffine(start, end)

@@ -28,5 +28,8 @@ class JointBiaffine(nn.Module):
                           char_ids=char_ids)
         x, (hn, cn) = self.bilstm(x)
         intent_output = self.intent_classifier(hn.permute(1, 0, 2).reshape(x.shape[0], -1))
-        slot_output = self.slot_classifier(x, intent_output, attention_mask)
+        if not self.use_attention and self.attention_type == 'hard':
+            slot_output = self.slot_classifier(x, hn.permute(1, 0, 2).reshape(x.shape[0], -1), attention_mask)
+        else:
+            slot_output = self.slot_classifier(x, intent_output, attention_mask)
         return intent_output, slot_output
