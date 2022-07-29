@@ -3,6 +3,9 @@ import os
 import matplotlib.pyplot as plt
 import seaborn as sn
 from sklearn.metrics import confusion_matrix
+import pandas as pd
+import numpy as np
+
 
 
 def batch_computeF1(intent_labels, intent_preds, slot_labels, slot_preds, seq_lengths, label_set, save_path=None,
@@ -56,7 +59,7 @@ def batch_computeF1(intent_labels, intent_preds, slot_labels, slot_preds, seq_le
         plot_chart(intent_count, os.path.join(save_path, "intent_analyze.png"))
 
         intent_confusion_matrix = confusion_matrix(intent_labels, intent_preds)
-        df_cm = pd.DataFrame(array, index=intent_maps,
+        df_cm = pd.DataFrame(intent_confusion_matrix, index=intent_maps,
                              columns=intent_maps)
         plt.figure(figsize=(10, 7))
         sn.heatmap(df_cm, annot=True)
